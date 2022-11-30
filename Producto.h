@@ -4,7 +4,7 @@
 // 23/11/2022
 // Proyecto Integrador
 //
-
+#pragma once
 #include <iostream>
 using namespace std;
 
@@ -14,11 +14,11 @@ class Producto {
     string claveT, nombreP;
     int categoriaP, cantidadP;
     float precioP;
-    string frutas_verduras[CANT], electrodomesticos[CANT], abarrotes[CANT], higiene[CANT], jardineria[CANT];
+    //string frutas_verduras[CANT], electrodomesticos[CANT], abarrotes[CANT], higiene[CANT], jardineria[CANT];
 public:
     // Constructores
     Producto();
-    Producto(string, string, int, float, int);
+    Producto(string, int, float, int);
     // Destructor
     ~Producto();
     // Accesores (getters)

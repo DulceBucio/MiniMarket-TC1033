@@ -19,8 +19,11 @@ Producto::Producto() {
     precioP = 0;
     cantidadP = 0;
 }
-Producto::Producto(string claveT, string nombreP, int categoriaP, float precioP, int cantidadP) {
-
+Producto::Producto(string nombreP, int categoriaP, float precioP, int cantidadP) {
+    this -> nombreP = nombreP;
+    this -> categoriaP = categoriaP;
+    this -> precioP = precioP;
+    this -> cantidadP = cantidadP;
 }
 Producto::~Producto() {}
 string Producto::getClaveT() {
@@ -39,25 +42,7 @@ int Producto::getCantidadP(){
     return cantidadP;
 }
 
-void Producto::agregarLosProducto(string nombreArchivo) {
-    ifstream miArchivo; // objeto de tipo archivos de entrada
-    miArchivo.open(nombreArchivo.c_str(), ios::out | ios::in);
-    // el archivo cuyo nombre llega como parametro, se abre para lectura
-    if (!miArchivo) // si el archivo no se encuentra, marcara error
-        cout<<"\nEl archivo no existe\n";
-    else{
-        cout<<"\nLleno el arreglo con los datos del archivo de texto\n";
-            string nombrePr;
-            int categoriaProd, cantidadProd;
-            float precioProd;
-        int i = 0;
-        while (!miArchivo.eof() && i < CANT-1){ // cuido no llegar al fin del archivo
-            // y no rebasar el tamanio de mi arreglo
-            miArchivo >> nombrePr >> categoriaProd >> precioProd >> cantidadProd; // obtengo los valores del archivo y
-            // los paso a mis variables previamente definidas con el tipo requerido
-            cout << nombrePr << " " << categoriaProd << " " << precioProd << cantidadProd << endl;
-            frutas_verduras[i++].setPersona(nombrePr, cat); // actualizo el iesimo registro de personas
-        }
-    }
+void Producto::setClaveT(string claveT1) {
+    claveT = claveT1;
 }
 

@@ -6,14 +6,18 @@
 //
 
 #include <iostream>
+#include "Producto.h"
+#include "Cliente.h"
 using namespace std;
 
 // Declaración de la clase Cliente con sus atributos (privado) y sus métodos (público)
+const int CANTIDADPROD = 10;
+const int CANTCLIENTES = 20;
 class Tienda {
     string identificadorT, nombreT, direccionT;
     int cantidadProductosT, cantidadClientesT;
-    Producto productosT;
-    Cliente clientesT;
+    Producto productosT[CANTIDADPROD];
+    Cliente clientesT[CANTCLIENTES];
     double ingresoDiarioT;
 
 public:

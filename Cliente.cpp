@@ -15,8 +15,7 @@ Cliente::Cliente(){
     nombreC = "";
     correoElectronicoC = "";
     telefonoC = "";
-    carritoC = ??
-    totalC = 0;
+    totalC = 00;
 }
 
 // Constructor con parámetros de la clase Cliente:
@@ -70,8 +69,4 @@ void Cliente::imprimirCliente() {
     cout << "Correo electronico del cliente: " << correoElectronicoC << endl;
     cout << "Telefono del cliente: " << telefonoC << endl;
     cout << "Total del cliente: " << totalC << endl;
-}
-
-void Cliente::agregarClientes() {
-
 }
