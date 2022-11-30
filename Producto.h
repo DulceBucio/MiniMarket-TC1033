@@ -35,5 +35,4 @@ public:
     void setPrecioP(float);
     // Otros metodos
     void imprimirProducto();
-    void agregarLosProducto(string);
 };

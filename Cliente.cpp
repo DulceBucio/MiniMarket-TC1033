@@ -36,18 +36,27 @@ string Cliente::getNombreC() {
     return nombreC;
 }
 string Cliente::getCorreoElectronicoC() {
-    return velocidadMax;
+    return correoElectronicoC;
 }
 string Cliente::getTelefonoC() {
     return telefonoC;
 }
-double Cliente::getTelefonoC() {
-    return telefonoC;
+
+Producto Cliente::getCarritoC(int cant) {
+    Producto paraError;
+    paraError.setNombreP("Vacio");
+    if (cant >=0 && cant < CANT_CARRITO)
+        //return carritoC[CANT_CARRITO];
+    else
+        return paraError;
+}
+double Cliente::getTotalC() {
+    return totalC;
 }
 
 // Métodos para definir el valor de los diferentes atributos:
 void Cliente::setIdentificadorC(string identificadorC1) {
-    identificador = identificadorC1;
+    identificadorC = identificadorC1;
 }
 void Cliente::setNombreC(string nombreC1) {
     nombreC = nombreC1;

@@ -45,5 +45,7 @@ public:
     Cliente setClientesT();
     void setIngresoDiarioT();
     // Otros metodos
-
+    void imprimirTienda();
+    void agregarLosProducto(string);
+    void agregarClientes();
 };
