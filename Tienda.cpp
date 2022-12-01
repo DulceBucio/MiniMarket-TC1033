@@ -107,6 +107,39 @@ void Tienda::agregarLosProducto(string nombreArchivo) {
         }
     }
 }
+
+void Tienda::agregarElProducto() {
+    string claveN_P, nombreN_P;
+    int categoriaN_P, cantidadN_P, i = 0, masproductos = 1;
+    float precioN_P;
+    while (i<CANTIDADPROD){
+        cout << "Ingrese la clave del producto: \n";
+        cin >> claveN_P;
+        cout << "Ingrese el nombre del producto: \n";
+        cin >> nombreN_P;
+        cout << "Ingrese la categoria del producto: \n";
+        cin >> categoriaN_P;
+        cout << "Ingrese el precio de producto: \n";
+        cin >> precioN_P;
+        cout << "Ingrese la cantidad del producto: \n";
+        cin >> cantidadN_P;
+        productosT[i].setProducto(claveN_P, nombreN_P, categoriaN_P, precioN_P, cantidadN_P);
+        setCantidadProductosT(i);
+        cout << "¿Desea agregar otro producto? 1 para si, 2 para no \n";
+        cin >> masproductos;
+        if (masproductos == 1)
+            i =+1;
+        else
+            i = CANTIDADPROD;
+    }
+}
+
+void Tienda::llenarCarrito() {
+    string usuario_compra;
+    cout << "Ingrese su usuario de cliente: \n";
+    cin >> usuario_compra;
+}
+
 // Método para imprimir con carteles los diferentes atributos:
 void Tienda::imprimirTienda() {
     cout << "Identificador de la tienda: " << identificadorT << "\n";

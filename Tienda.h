@@ -47,7 +47,7 @@ public:
     // Otros metodos
     void imprimirTienda();
     void agregarLosProducto(string);
-    //void agregarElProducto();
+    void agregarElProducto();
     void agregarCliente();
     void llenarCarrito();
     //void imprimirTicketCompra();
