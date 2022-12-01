@@ -12,18 +12,31 @@
 using namespace std;
 
 int main() {
-    Tienda tienda1;
-    tienda1.setIdentificadorT("T1");
-    tienda1.setNombreT("Tienda 1");
-    tienda1.setDireccionT("Calle 1");
-    tienda1.setCantidadProductosT(10);
-    tienda1.setCantidadClientesT(5);
-    tienda1.setIngresoDiarioT(1000);
-    cout << "Identificador: " << tienda1.getIdentificadorT() << endl;
-    cout << "Nombre: " << tienda1.getNombreT() << endl;
-    cout << "Direccion: " << tienda1.getDireccionT() << endl;
-    cout << "Cantidad de productos: " << tienda1.getCantidadProductosT() << endl;
-    cout << "Cantidad de clientes: " << tienda1.getCantidadClientesT() << endl;
-    cout << "Ingreso diario: " << tienda1.getIngresoDiarioT() << endl;
+    Tienda tiendita;
+    string identificadorT_usuario, nombreT_usuario, direccionT_usuario;
+    cout << "Introduzca un identificador para su tienda: \n";
+    cin >> identificadorT_usuario;
+    cout << "Elija un nombre para su tienda: \n";
+    cin >> nombreT_usuario;
+    cout << "Direccion de su tienda: \n";
+    cin >> direccionT_usuario;
+    tiendita.setIdentificadorT(identificadorT_usuario);
+    tiendita.setNombreT(nombreT_usuario);
+    tiendita.setDireccionT(direccionT_usuario);
+    int menu=0;
+    do {
+        cout << "Bienvenido a tiendita " << tiendita.getNombreT() << "\n";
+        cout << "Elija una opcion: \n";
+        cout << "1) Agregar productos desde archivo \n";
+        cout << "2) Agregar productos uno a uno \n";
+        cout << "3) Agregar clientes \n";
+        cout << "4) Comprar productos \n";
+        cout << "5) Realizar cierre del dia \n";
+        cout << "6) Salir \n";
+        cin >> menu;
+    } while (menu == 0);
+    if (menu ==6){
+        cout << "¡Hasta pronto! \n";
+    }
     return 0;
 }
