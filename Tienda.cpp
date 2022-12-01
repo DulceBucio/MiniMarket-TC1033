@@ -85,12 +85,33 @@ void Tienda::agregarCliente() {
     int i;
     clientesT[i].setCliente(nombreN, identificadorN, correoN, telefonoN);
 }
+
+void Tienda::agregarLosProducto(string nombreArchivo) {
+    ifstream miArchivo;
+    miArchivo.open(nombreArchivo.c_str(), ios::out | ios::in);
+    // el archivo cuyo nombre llega como parametro, se abre para lectura
+    if (!miArchivo) // si el archivo no se encuentra, marcara error
+        cout<<"\nEl archivo no existe\n";
+    else{
+        cout<<"\nLleno el arreglo con los datos del archivo de texto\n";
+        string nombre;
+        int categoria, cantidad, i = 0;
+        float precio;
+        while (!miArchivo.eof() && i <CANTIDADPROD){ // cuido no llegar al fin del archivo
+            // y no rebasar el tamanio de mi arreglo
+            miArchivo >> nombre >> categoria >> precio >> cantidad; // obtengo los valores del archivo y
+            // los paso a mis variables previamente definidas con el tipo requerido
+            cout << nombre << " " << categoria << " " << precio << " " << cantidad << endl;
+            productosT[i++].setProducto(nombre, categoria, precio, cantidad);
+        }
+    }
+}
 // Método para imprimir con carteles los diferentes atributos:
 void Tienda::imprimirTienda() {
-    cout << "Identificador de la tienda: " << identificadorT << endl;
-    cout << "Nombre de la tienda: " << nombreT << endl;
-    cout << "Direccion de la tienda: " << direccionT << endl;
-    cout << "Cantidad de productos en la tienda: " << cantidadProductosT << endl;
-    cout << "Cantidad de clientes en la tienda: " << cantidadClientesT << endl;
-    cout << "Ingreso diario de la tienda: " << ingresoDiarioT << endl;
+    cout << "Identificador de la tienda: " << identificadorT << "\n";
+    cout << "Nombre de la tienda: " << nombreT << "\n'";
+    cout << "Direccion de la tienda: " << direccionT << "\n";
+    cout << "Cantidad de productos en la tienda: " << cantidadProductosT << "\n";
+    cout << "Cantidad de clientes en la tienda: " << cantidadClientesT << "\n";
+    cout << "Ingreso diario de la tienda: " << ingresoDiarioT << "\n";
 }

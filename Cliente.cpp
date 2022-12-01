@@ -82,8 +82,8 @@ void Cliente::setCliente(string identificadorC, string nombreC, string correoEle
 
 // Método para imprimir con carteles los diferentes atributos:
 void Cliente::imprimirCliente() {
-    cout << "Identificador del cliente: " << identificadorC << endl;
-    cout << "Nombre del cliente: " << nombreC << endl;
-    cout << "Correo electronico del cliente: " << correoElectronicoC << endl;
-    cout << "Telefono del cliente: " << telefonoC << endl;
+    cout << "Identificador del cliente: " << identificadorC << "\n";
+    cout << "Nombre del cliente: " << nombreC << "\n";
+    cout << "Correo electronico del cliente: " << correoElectronicoC << "\n";
+    cout << "Telefono del cliente: " << telefonoC << "\n";
 }

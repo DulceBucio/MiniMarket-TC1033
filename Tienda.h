@@ -46,7 +46,7 @@ public:
     void setIngresoDiarioT(double);
     // Otros metodos
     void imprimirTienda();
-    //void agregarLosProducto(string);
+    void agregarLosProducto(string);
     //void agregarElProducto();
     void agregarCliente();
     //void llenarCarrito();

@@ -36,7 +36,7 @@ int main() {
         cin >> menu;
     } while (menu == 0);
     if (menu ==6){
-        cout << "¡Hasta pronto! \n";
+        cout << "Hasta pronto! \n";
     }
     return 0;
 }
