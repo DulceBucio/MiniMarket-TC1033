@@ -41,8 +41,18 @@ int main() {
         cin >> archivo_usuario;
         tiendita.agregarLosProducto(archivo_usuario);
     }
-    if (menu == 2){
+
+    if (menu == 2)
         tiendita.agregarElProducto();
+
+    if (menu == 3)
+        tiendita.agregarCliente();
+
+    if (menu == 4) {
+        tiendita.llenarCarrito();
+    }
+    if (menu == 5) {
+        cout << "aqui no hay nada todavia jejejej \n";
     }
     if (menu ==6){
         cout << "Hasta pronto! \n";

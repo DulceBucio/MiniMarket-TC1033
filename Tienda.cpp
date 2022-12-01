@@ -74,7 +74,7 @@ void Tienda::setIngresoDiarioT(double ingresoDiarioT1) {
 
 void Tienda::agregarCliente() {
     string nombreN, identificadorN, correoN, telefonoN;
-    cout << "Ingrese un usuario: \n";
+    cout << "Ingrese su nombre: \n";
     cin >> nombreN;
     cout << "Ingrese un identificador: \n ";
     cin >> identificadorN;
@@ -136,8 +136,18 @@ void Tienda::agregarElProducto() {
 
 void Tienda::llenarCarrito() {
     string usuario_compra;
+    bool existe_usuario = false;
     cout << "Ingrese su usuario de cliente: \n";
     cin >> usuario_compra;
+    for (int verif_usuario = 0; verif_usuario < CANTCLIENTES; verif_usuario++) {
+        if (clientesT[verif_usuario].getIdentificadorC() == usuario_compra){
+            existe_usuario = true;
+        }
+        else {
+            cout << "Eres nuevo aqui \n";
+            agregarCliente();
+        }
+    }
 }
 
 // Método para imprimir con carteles los diferentes atributos:
