@@ -1,25 +1,25 @@
-Manzanas 1 100 7
-Peras 1 100 7
-Uvas 1 100 7 
-Zanahoria 1 100 7
-Brocoli 1 100 7 
-Lavadora 2 100 7
-Licuadora 2 100 7
-Refrigerador 2 100 7
-Microondas 2 100 7
-Estufa 2 100 7
-Papas 3 100 7
-Frijoles 3 100 7
-Sopa 3 100 7
-Arroz 3 100 7
-Detergente 4 100 7
-Desodorante 4 100 7
-Shampoo 4 100 7
-Jabon 4 100 7
-Rastrillo 4 100 7
-Crema 4 100 7
-Pinzas 5 100 7
-Tijeras 5 100 7
-Manguera 5 100 7
-Guantes 5 100 7
-Maceta 5 100 7
+P1001 Manzanas 1 100 7
+P1002 Peras 1 100 7
+P1003 Uvas 1 100 7 
+P1004 Zanahoria 1 100 7
+P1005 Brocoli 1 100 7 
+P2001 Lavadora 2 100 7
+P2002 Licuadora 2 100 7
+P2003 Refrigerador 2 100 7
+P2004 Microondas 2 100 7
+P2005 Estufa 2 100 7
+P3001 Papas 3 100 7
+P3002 Frijoles 3 100 7
+P3003 Sopa 3 100 7
+P3004 Arroz 3 100 7
+P3005 Detergente 4 100 7
+P4001 Desodorante 4 100 7
+P4002 Shampoo 4 100 7
+P4003 Jabon 4 100 7
+P4004 Rastrillo 4 100 7
+P4005 Crema 4 100 7
+P5001 Pinzas 5 100 7
+P5002 Tijeras 5 100 7
+P5003 Manguera 5 100 7
+P5004 Guantes 5 100 7
+P5005 Maceta 5 100 7

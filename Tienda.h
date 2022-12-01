@@ -49,7 +49,7 @@ public:
     void agregarLosProducto(string);
     //void agregarElProducto();
     void agregarCliente();
-    //void llenarCarrito();
+    void llenarCarrito();
     //void imprimirTicketCompra();
     //void cerrarOperaciones();
 };

@@ -35,8 +35,18 @@ int main() {
         cout << "6) Salir \n";
         cin >> menu;
     } while (menu == 0);
+    if (menu == 1){
+        string archivo_usuario;
+        cout << "Elija un archivo de donde importar los productos \n";
+        cin >> archivo_usuario;
+        tiendita.agregarLosProducto(archivo_usuario);
+    }
+    if (menu == 2){
+        tiendita.agregarElProducto();
+    }
     if (menu ==6){
         cout << "Hasta pronto! \n";
     }
+
     return 0;
 }

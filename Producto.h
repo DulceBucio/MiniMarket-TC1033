@@ -29,7 +29,7 @@ public:
     float getPrecioP();
     int getCantidadP();
     // Modificadores (setters)
-    void setProducto(string, int, float, int);
+    void setProducto(string, string, int, float, int);
     void setClaveT(string);
     void setNombreP(string);
     void setCategoriaP(int);

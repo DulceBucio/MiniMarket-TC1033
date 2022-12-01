@@ -83,6 +83,7 @@ void Tienda::agregarCliente() {
     cout << "Ingrese un numero telefonico: \n";
     cin >> telefonoN;
     int i;
+    i = sizeof(clientesT[CANTCLIENTES]);
     clientesT[i].setCliente(nombreN, identificadorN, correoN, telefonoN);
 }
 
@@ -94,15 +95,15 @@ void Tienda::agregarLosProducto(string nombreArchivo) {
         cout<<"\nEl archivo no existe\n";
     else{
         cout<<"\nLleno el arreglo con los datos del archivo de texto\n";
-        string nombre;
+        string clave, nombre;
         int categoria, cantidad, i = 0;
         float precio;
         while (!miArchivo.eof() && i <CANTIDADPROD){ // cuido no llegar al fin del archivo
             // y no rebasar el tamanio de mi arreglo
-            miArchivo >> nombre >> categoria >> precio >> cantidad; // obtengo los valores del archivo y
+            miArchivo >> clave >> nombre >> categoria >> precio >> cantidad; // obtengo los valores del archivo y
             // los paso a mis variables previamente definidas con el tipo requerido
             cout << nombre << " " << categoria << " " << precio << " " << cantidad << endl;
-            productosT[i++].setProducto(nombre, categoria, precio, cantidad);
+            productosT[i++].setProducto(clave, nombre, categoria, precio, cantidad);
         }
     }
 }
