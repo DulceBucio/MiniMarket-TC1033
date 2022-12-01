@@ -72,6 +72,19 @@ void Tienda::setIngresoDiarioT(double ingresoDiarioT1) {
         ingresoDiarioT = ingresoDiarioT1;
 }
 
+void Tienda::agregarCliente() {
+    Cliente clienteNuevo;
+    string nombreN, identificadorN, correoN, telefonoN;
+    cout << "Ingrese un usuario: \n";
+    cin >> nombreN;
+    cout << "Ingrese un identificador: \n ";
+    cin >> identificadorN;
+    cout << "Ingrese un correo electronico: \n";
+    cin >> correoN;
+    cout << "Ingrese un numero telefonico: \n";
+    cin >> telefonoN;
+    clienteNuevo.setCliente(nombreN, identificadorN, correoN, telefonoN);
+}
 // Método para imprimir con carteles los diferentes atributos:
 void Tienda::imprimirTienda() {
     cout << "Identificador de la tienda: " << identificadorT << endl;

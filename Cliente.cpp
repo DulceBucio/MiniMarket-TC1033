@@ -73,7 +73,12 @@ void Cliente::setTotalC(double totalC1) {
     totalC = totalC1;
 }
 
-
+void Cliente::setCliente(string identificadorC, string nombreC, string correoElectronicoC, string telefonoC) {
+    this -> identificadorC = identificadorC;
+    this -> nombreC = nombreC;
+    this -> correoElectronicoC = correoElectronicoC;
+    this -> telefonoC = telefonoC;
+}
 
 // Método para imprimir con carteles los diferentes atributos:
 void Cliente::imprimirCliente() {
@@ -81,5 +86,4 @@ void Cliente::imprimirCliente() {
     cout << "Nombre del cliente: " << nombreC << endl;
     cout << "Correo electronico del cliente: " << correoElectronicoC << endl;
     cout << "Telefono del cliente: " << telefonoC << endl;
-    cout << "Total del cliente: " << totalC << endl;
 }

@@ -48,7 +48,7 @@ public:
     void imprimirTienda();
     //void agregarLosProducto(string);
     //void agregarElProducto();
-    //void agregarCliente();
+    void agregarCliente();
     //void llenarCarrito();
     //void imprimirTicketCompra();
     //void cerrarOperaciones();

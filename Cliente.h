@@ -15,6 +15,7 @@ class Cliente {
     string identificadorC, nombreC, correoElectronicoC, telefonoC;
     double totalC;
     Producto carritoC[CANT_CARRITO];
+    double totalC;
 public:
     // Constructores
     Cliente();
@@ -34,6 +35,7 @@ public:
     void setCorreoElectronicoC(string);
     void setTelefonoC(string);
     void setTotalC(double);
+    void setCliente(string, string, string, string);
     //Producto setCarritoC();
     // Otros metodos
     void imprimirCliente();
