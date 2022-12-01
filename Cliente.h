@@ -13,7 +13,6 @@ using namespace std;
 const int CANT_CARRITO = 10;
 class Cliente {
     string identificadorC, nombreC, correoElectronicoC, telefonoC;
-    double totalC;
     Producto carritoC[CANT_CARRITO];
     double totalC;
 public:
