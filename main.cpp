@@ -42,12 +42,19 @@ int main() {
         tiendita.agregarLosProducto(archivo_usuario);
     }
 
-    if (menu == 2)
+    if (menu == 2) {
         tiendita.agregarElProducto();
-
-    if (menu == 3)
+    }
+    if (menu == 3){
         tiendita.agregarCliente();
-
+        int decision_3 = 0;
+        cout << "Desea realizar otra operacion? 1) para si, 2) para no \n";
+        cin >> decision_3;
+        if (decision_3 == 1)
+            menu = 0;
+        else
+            menu = 6;
+    }
     if (menu == 4) {
         tiendita.llenarCarrito();
     }
