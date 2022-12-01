@@ -23,7 +23,7 @@ class Tienda {
 public:
     // Constructores
     Tienda();
-    Tienda(string, string, string, int, int, Producto, Cliente, double);
+    Tienda(string, string, string, int, int, double);
     // Destructor
     ~Tienda();
     // Accesores (getters)
@@ -32,20 +32,24 @@ public:
     string getDireccionT();
     int getCantidadProductosT();
     int getCantidadClientesT();
-    Producto getProductosT();
-    Cliente getClientesT();
+    //Producto getProductosT();
+    //Cliente getClientesT();
     double getIngresoDiarioT();
     // Modificadores (setters)
-    void setIdentificadorT();
-    void setNombreT();
-    void setDireccionT();
-    void setCantidadProductosT();
-    void setCantidadClientesT();
-    Producto setProductosT();
-    Cliente setClientesT();
-    void setIngresoDiarioT();
+    void setIdentificadorT(string);
+    void setNombreT(string);
+    void setDireccionT(string);
+    void setCantidadProductosT(int);
+    void setCantidadClientesT(int);
+    //Producto setProductosT();
+    //Cliente setClientesT();
+    void setIngresoDiarioT(double);
     // Otros metodos
     void imprimirTienda();
-    void agregarLosProducto(string);
-    void agregarClientes();
+    //void agregarLosProducto(string);
+    //void agregarElProducto();
+    //void agregarCliente();
+    //void llenarCarrito();
+    //void imprimirTicketCompra();
+    //void cerrarOperaciones();
 };

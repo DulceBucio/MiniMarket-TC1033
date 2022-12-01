@@ -47,7 +47,7 @@ int Tienda::getCantidadProductosT() {
 }
 int Tienda::getCantidadClientesT() {
     return cantidadClientesT;
-
+}
 double Tienda::getIngresoDiarioT() {
     return ingresoDiarioT;
 }
@@ -81,24 +81,3 @@ void Tienda::imprimirTienda() {
     cout << "Cantidad de clientes en la tienda: " << cantidadClientesT << endl;
     cout << "Ingreso diario de la tienda: " << ingresoDiarioT << endl;
 }
-
-void Tienda::agregarLosProducto(string nombreArchivo) {
-    ifstream miArchivo; // objeto de tipo archivos de entrada
-    miArchivo.open(nombreArchivo.c_str(), ios::out | ios::in);
-    // el archivo cuyo nombre llega como parametro, se abre para lectura
-    if (!miArchivo) // si el archivo no se encuentra, marcara error
-        cout<<"\nEl archivo no existe\n";
-    else{
-        string nombre_p;
-        int cantidad_p, categoria_p;
-        float precio_p;
-        while (!miArchivo.eof() && i < CANTIDADPROD){ // cuido no llegar al fin del archivo
-            // y no rebasar el tamanio de mi arreglo
-            // rfc11 monica 15
-            miArchivo >> nombre_p >> categoria_p >> cantidad_p >> precio_p >> endl; // obtengo los valores del archivo y
-            // los paso a mis variables previamente definidas con el tipo requerido
-            cout << nombre_p << " " << categoria_p << " " << cantidad_p << " " << precio_p << endl;
-            productosT[i++].Producto(nombre_p, categoria_p, cantidad_p, precio_p); // actualizo el iesimo registro de personas
-        }
-    }
-}}

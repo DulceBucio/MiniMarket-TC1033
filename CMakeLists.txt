@@ -3,4 +3,4 @@ project(proyectoahorasi)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(proyectoahorasi main.cpp)
+add_executable(proyectoahorasi main.cpp Producto.cpp Cliente.cpp Tienda.cpp)

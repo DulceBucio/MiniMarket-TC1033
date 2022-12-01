@@ -8,24 +8,25 @@
 #include <iostream>
 #include <fstream>
 #include "Producto.h"
-#include <bits/stdc++.h>
-#include <ostream>
 using namespace std;
 
+// Constructores
 Producto::Producto() {
     claveT = "";
     nombreP = "";
     categoriaP = 0;
-    precioP = 0;
+    precioP = 0.00;
     cantidadP = 0;
 }
-Producto::Producto(string nombreP, int categoriaP, float precioP, int cantidadP) {
+Producto::Producto(string claveT, string nombreP, int categoriaP, float precioP, int cantidadP) {
+    this -> claveT = claveT;
     this -> nombreP = nombreP;
     this -> categoriaP = categoriaP;
     this -> precioP = precioP;
     this -> cantidadP = cantidadP;
 }
 Producto::~Producto() {}
+
 string Producto::getClaveT() {
     return claveT;
 }
@@ -35,8 +36,8 @@ string Producto::getNombreP() {
 int Producto::getCategoriaP() {
     return categoriaP;
 }
-int Producto::getPrecioP(){
-    return precioP
+float Producto::getPrecioP(){
+    return precioP;
 }
 int Producto::getCantidadP(){
     return cantidadP;

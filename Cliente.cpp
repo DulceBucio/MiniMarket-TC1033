@@ -45,10 +45,12 @@ string Cliente::getTelefonoC() {
 Producto Cliente::getCarritoC(int cant) {
     Producto paraError;
     paraError.setNombreP("Vacio");
-    if (cant >=0 && cant < CANT_CARRITO)
+    if (cant >=0 && cant < CANT_CARRITO){
         //return carritoC[CANT_CARRITO];
-    else
+    }
+    else {
         return paraError;
+    }
 }
 double Cliente::getTotalC() {
     return totalC;
@@ -70,6 +72,8 @@ void Cliente::setTelefonoC(string telefonoC1) {
 void Cliente::setTotalC(double totalC1) {
     totalC = totalC1;
 }
+
+
 
 // Método para imprimir con carteles los diferentes atributos:
 void Cliente::imprimirCliente() {

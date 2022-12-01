@@ -4,7 +4,7 @@
 // 23/11/2022
 // Proyecto Integrador | Clase cliente
 //
-
+#pragma once
 #include <iostream>
 #include "Producto.h"
 using namespace std;
@@ -18,7 +18,7 @@ class Cliente {
 public:
     // Constructores
     Cliente();
-    Cliente(string, string, string, string, double, Producto);
+    Cliente(string, string, string, string, double);
     // Destructor
     ~Cliente();
     // Accesores (getters)
@@ -34,7 +34,7 @@ public:
     void setCorreoElectronicoC(string);
     void setTelefonoC(string);
     void setTotalC(double);
-    Producto setCarritoC();
+    //Producto setCarritoC();
     // Otros metodos
     void imprimirCliente();
 };

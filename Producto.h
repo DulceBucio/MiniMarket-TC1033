@@ -4,11 +4,12 @@
 // 23/11/2022
 // Proyecto Integrador | Clase producto
 //
-#pragma once
+
+#pragma once //Esta clase la incluiremos muchas veces, por lo que usamos pragma once
 #include <iostream>
 using namespace std;
 
-const int CANT = 5;
+
 // Declaración de la clase Producto con sus atributos (privado) y sus métodos (público)
 class Producto {
     string claveT, nombreP;
@@ -18,15 +19,15 @@ class Producto {
 public:
     // Constructores
     Producto();
-    Producto(string, int, float, int);
+    Producto(string, string, int, float, int);
     // Destructor
     ~Producto();
     // Accesores (getters)
     string getClaveT();
     string getNombreP();
     int getCategoriaP();
-    int getCantidadP;
-    float getPrecioP;
+    float getPrecioP();
+    int getCantidadP();
     // Modificadores (setters)
     void setClaveT(string);
     void setNombreP(string);
