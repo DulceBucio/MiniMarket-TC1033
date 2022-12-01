@@ -71,7 +71,7 @@ void Tienda::setCantidadClientesT(int cantidadClientesT1) {
 void Tienda::setIngresoDiarioT(double ingresoDiarioT1) {
         ingresoDiarioT = ingresoDiarioT1;
 }
-
+// Metodo para agregar clientes usando el setClientes
 void Tienda::agregarCliente() {
     string nombreN, identificadorN, correoN, telefonoN;
     cout << "Ingrese su nombre: \n";
@@ -87,6 +87,7 @@ void Tienda::agregarCliente() {
     clientesT[i].setCliente(nombreN, identificadorN, correoN, telefonoN);
 }
 
+//Metodo para agregar los productos desde un archivo seleccionado
 void Tienda::agregarLosProducto(string nombreArchivo) {
     ifstream miArchivo;
     miArchivo.open(nombreArchivo.c_str(), ios::out | ios::in);
@@ -108,6 +109,7 @@ void Tienda::agregarLosProducto(string nombreArchivo) {
     }
 }
 
+// Metodo para agregar productos manualmente a la respectiva lista
 void Tienda::agregarElProducto() {
     string claveN_P, nombreN_P;
     int categoriaN_P, cantidadN_P, i = 0, masproductos = 1;
@@ -134,6 +136,7 @@ void Tienda::agregarElProducto() {
     }
 }
 
+// Metodo para comprar
 void Tienda::llenarCarrito() {
     string usuario_compra;
     bool existe_usuario = false;

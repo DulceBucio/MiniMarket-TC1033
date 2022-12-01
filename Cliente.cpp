@@ -73,6 +73,7 @@ void Cliente::setTotalC(double totalC1) {
     totalC = totalC1;
 }
 
+// Este es un setter parecido a un constructor para poder meter clientes a listas
 void Cliente::setCliente(string identificadorC, string nombreC, string correoElectronicoC, string telefonoC) {
     this -> identificadorC = identificadorC;
     this -> nombreC = nombreC;

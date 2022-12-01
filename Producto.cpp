@@ -25,8 +25,9 @@ Producto::Producto(string claveT, string nombreP, int categoriaP, float precioP,
     this -> precioP = precioP;
     this -> cantidadP = cantidadP;
 }
-Producto::~Producto() {}
+Producto::~Producto() {} //Destructor
 
+//Getters
 string Producto::getClaveT() {
     return claveT;
 }
@@ -43,6 +44,9 @@ int Producto::getCantidadP(){
     return cantidadP;
 }
 
+//Setters
+//El primero es una especie de setter parecido a un constructor para
+// meter productos a listas.
 void Producto::setProducto(string claveT, string nombreP, int categoriaP, float precioP, int cantidadP) {
     this -> claveT = claveT;
     this -> nombreP = nombreP;
