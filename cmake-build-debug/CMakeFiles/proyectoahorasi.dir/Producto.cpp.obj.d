@@ -1,5 +1,5 @@
 CMakeFiles/proyectoahorasi.dir/Producto.cpp.obj: \
- C:\Users\PC\ BULLOCK\Documents\tc1033\ProyectoTC1033\Producto.cpp \
+ C:\Users\yasmi\OneDrive\Documents\1er\ semestre\poo\proyecto_tc1033\ProyectoTC1033\Producto.cpp \
  C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
  C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
@@ -137,4 +137,4 @@ CMakeFiles/proyectoahorasi.dir/Producto.cpp.obj: \
  C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fstream.tcc \
- C:\Users\PC\ BULLOCK\Documents\tc1033\ProyectoTC1033\Producto.h
+ C:\Users\yasmi\OneDrive\Documents\1er\ semestre\poo\proyecto_tc1033\ProyectoTC1033\Producto.h
