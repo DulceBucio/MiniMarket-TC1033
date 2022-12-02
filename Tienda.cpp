@@ -182,7 +182,10 @@ void Tienda::llenarCarrito() {
     }
 }
 
-
+void Tienda::cerrarOperaciones() {
+    cout << "Total generado del dia: \n";
+    cout << getIngresoDiarioT() << "\n";
+}
 // Método para imprimir con carteles los diferentes atributos:
 void Tienda::imprimirTienda() {
     cout << "Identificador de la tienda: " << identificadorT << "\n";

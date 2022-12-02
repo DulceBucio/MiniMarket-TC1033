@@ -51,7 +51,10 @@ int main() {
             tiendita.llenarCarrito();
         }
         else if(menu == 5) {
-            cout << "cierre";
+            tiendita.cerrarOperaciones();
+        }
+        else {
+            cout << "Opcion invalida! \n";
         }
     } while (menu != 6);
 

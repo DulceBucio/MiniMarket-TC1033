@@ -51,5 +51,5 @@ public:
     void agregarCliente();
     void llenarCarrito();
     //void imprimirTicketCompra();
-    //void cerrarOperaciones();
+    void cerrarOperaciones();
 };

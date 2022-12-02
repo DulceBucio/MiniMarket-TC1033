@@ -79,3 +79,5 @@ void Producto::imprimirProducto() {
     cout << "Precio de producto: " << precioP << "\n";
     cout << "Cantidad de productos: " << cantidadP<< "\n";
 }
+
+
