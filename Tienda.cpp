@@ -160,19 +160,39 @@ void Tienda::llenarCarrito() {
             cout << "6) Regresar al menu principal \n";
             cin >> categoria_compra;
             if (categoria_compra == 1) {
-                cout << "a";
+                for (int prod_cat = 0; prod_cat < cantidadProductosT; prod_cat++){
+                    if(productosT[prod_cat].getCategoriaP() == categoria_compra){
+                        productosT[prod_cat].imprimirProducto();
+                    }
+                }
             }
             else if(categoria_compra == 2){
-                cout << "b";
+                for (int prod_cat = 0; prod_cat < cantidadProductosT; prod_cat++){
+                    if(productosT[prod_cat].getCategoriaP() == categoria_compra){
+                        productosT[prod_cat].imprimirProducto();
+                    }
+                }
             }
             else if(categoria_compra == 3){
-                cout << "c";
+                for (int prod_cat = 0; prod_cat < cantidadProductosT; prod_cat++){
+                    if(productosT[prod_cat].getCategoriaP() == categoria_compra){
+                        productosT[prod_cat].imprimirProducto();
+                    }
+                }
             }
             else if(categoria_compra == 4){
-                cout << "d";
+                for (int prod_cat = 0; prod_cat < cantidadProductosT; prod_cat++){
+                    if(productosT[prod_cat].getCategoriaP() == categoria_compra){
+                        productosT[prod_cat].imprimirProducto();
+                    }
+                }
             }
             else if(categoria_compra == 5){
-                cout << "e";
+                for (int prod_cat = 0; prod_cat < cantidadProductosT; prod_cat++){
+                    if(productosT[prod_cat].getCategoriaP() == categoria_compra){
+                        productosT[prod_cat].imprimirProducto();
+                    }
+                }
             }
             else {
                 cout << "Categoria invalida! \n";
