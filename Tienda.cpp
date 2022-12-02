@@ -174,6 +174,9 @@ void Tienda::llenarCarrito() {
             else if(categoria_compra == 5){
                 cout << "e";
             }
+            else {
+                cout << "Categoria invalida! \n";
+            }
         } while (categoria_compra != 6);
     }
     else {
