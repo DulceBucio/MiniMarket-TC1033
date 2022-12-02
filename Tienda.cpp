@@ -1,3 +1,4 @@
+
 //
 // Dulce Nahomi Bucio Rivas | A01425284
 // Desirée Espinosa Contreras | A01425162
@@ -93,8 +94,10 @@ void Tienda::agregarLosProducto(string nombreArchivo) {
     ifstream miArchivo;
     miArchivo.open(nombreArchivo.c_str(), ios::out | ios::in);
     // el archivo cuyo nombre llega como parametro, se abre para lectura
-    if (!miArchivo) // si el archivo no se encuentra, marcara error
+    if (!miArchivo) {
         cout<<"\nEl archivo no existe\n";
+    }// si el archivo no se encuentra, marcara error
+
     else{
         cout<<"Se cargaron los productos correctamente \n";
         string clave, nombre;
@@ -148,7 +151,8 @@ void Tienda::llenarCarrito() {
             existe_usuario = true;
         }
     }
-    int categoria_compra;
+    int categoria_compra, cuantosCompra;
+    string eleccionCompra;
     if (existe_usuario){
         do {
             cout << "Que desea comprar? \n";
@@ -157,12 +161,26 @@ void Tienda::llenarCarrito() {
             cout << "3) Abarrotes \n";
             cout << "4) Higiene personal \n";
             cout << "5) Jardineria \n";
-            cout << "6) Regresar al menu principal \n";
+            cout << "6) Imprimir ticket \n";
             cin >> categoria_compra;
             if (categoria_compra == 1) {
+                cout << "Nombre " << "Precio " << "Cantidad \n";
                 for (int prod_cat = 0; prod_cat < cantidadProductosT; prod_cat++){
                     if(productosT[prod_cat].getCategoriaP() == categoria_compra){
-                        productosT[prod_cat].imprimirProducto();
+                        productosT[prod_cat].imprimirMenuProductos();
+                    }
+                }
+                cin >> eleccionCompra;
+                for (int prod_nombre = 0; prod_nombre < cantidadProductosT; prod_nombre++){
+                    if(productosT[prod_nombre].getNombreP() == eleccionCompra){
+                        cout << "Cuantos deseas comprar \n";
+                        cin >> cuantosCompra;
+                        if (productosT[prod_nombre].getCantidadP() >= cuantosCompra){
+                            productosT[prod_nombre].setCantidadP(productosT[prod_nombre].getCantidadP()-cuantosCompra);
+                        }
+                        else {
+                            cout << "No tenemos inventario suficiente \n";
+                        }
                     }
                 }
             }

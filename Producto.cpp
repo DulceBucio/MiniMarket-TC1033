@@ -80,4 +80,8 @@ void Producto::imprimirProducto() {
     cout << "Cantidad de productos: " << cantidadP<< "\n";
 }
 
+void Producto::imprimirMenuProductos() {
+    cout << nombreP << " " << precioP << "   " << cantidadP << "\n";
+}
+
 

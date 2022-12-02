@@ -20,6 +20,10 @@ int main() {
     cin >> nombreT_usuario;
     cout << "Direccion de su tienda: \n";
     cin >> direccionT_usuario;
+    string archivo_usuario;
+    cout << "Elija un archivo de donde importar los productos \n";
+    cin >> archivo_usuario;
+    tiendita.agregarLosProducto(archivo_usuario);
     tiendita.setIdentificadorT(identificadorT_usuario);
     tiendita.setNombreT(nombreT_usuario);
     tiendita.setDireccionT(direccionT_usuario);
@@ -35,10 +39,7 @@ int main() {
         cout << "6) Salir \n";
         cin >> menu;
         if (menu == 1){
-            string archivo_usuario;
-            cout << "Elija un archivo de donde importar los productos \n";
-            cin >> archivo_usuario;
-            tiendita.agregarLosProducto(archivo_usuario);
+            cout << "No tienes permiso para realizar esta operacion \n";
         }
         else if(menu == 2) {
             tiendita.agregarElProducto();
