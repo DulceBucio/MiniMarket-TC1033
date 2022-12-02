@@ -46,7 +46,6 @@ int main() {
         }
         else if(menu == 3){
             tiendita.agregarCliente();
-            cout << "si";
         }
         else if(menu == 4) {
             tiendita.llenarCarrito();

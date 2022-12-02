@@ -153,6 +153,7 @@ void Tienda::llenarCarrito() {
     }
     int categoria_compra, cuantosCompra;
     string eleccionCompra;
+    bool existeProducto = false;
     if (existe_usuario){
         do {
             cout << "Que desea comprar? \n";
@@ -177,11 +178,16 @@ void Tienda::llenarCarrito() {
                         cin >> cuantosCompra;
                         if (productosT[prod_nombre].getCantidadP() >= cuantosCompra){
                             productosT[prod_nombre].setCantidadP(productosT[prod_nombre].getCantidadP()-cuantosCompra);
+                            setIngresoDiarioT(productosT[prod_nombre].getPrecioP()*cuantosCompra);
                         }
                         else {
                             cout << "No tenemos inventario suficiente \n";
                         }
+                        categoria_compra = true;
                     }
+                }
+                if (existeProducto == false){
+                    cout << "No tenemos ese producto, intenta otra vez \n";
                 }
             }
             else if(categoria_compra == 2){
@@ -190,12 +196,48 @@ void Tienda::llenarCarrito() {
                         productosT[prod_cat].imprimirProducto();
                     }
                 }
+                cin >> eleccionCompra;
+                for (int prod_nombre = 0; prod_nombre < cantidadProductosT; prod_nombre++){
+                    if(productosT[prod_nombre].getNombreP() == eleccionCompra){
+                        cout << "¿Cuantos deseas comprar? \n";
+                        cin >> cuantosCompra;
+                        if (productosT[prod_nombre].getCantidadP() >= cuantosCompra){
+                            productosT[prod_nombre].setCantidadP(productosT[prod_nombre].getCantidadP()-cuantosCompra);
+                            setIngresoDiarioT(productosT[prod_nombre].getPrecioP()*cuantosCompra);
+                        }
+                        else {
+                            cout << "No tenemos inventario suficiente \n";
+                        }
+                        categoria_compra = true;
+                    }
+                }
+                if (existeProducto == false){
+                    cout << "No tenemos ese producto, intenta con otro \n";
+                }
             }
             else if(categoria_compra == 3){
                 for (int prod_cat = 0; prod_cat < cantidadProductosT; prod_cat++){
                     if(productosT[prod_cat].getCategoriaP() == categoria_compra){
                         productosT[prod_cat].imprimirProducto();
                     }
+                }
+                cin >> eleccionCompra;
+                for (int prod_nombre = 0; prod_nombre < cantidadProductosT; prod_nombre++){
+                    if(productosT[prod_nombre].getNombreP() == eleccionCompra){
+                        cout << "Cuantos deseas comprar \n";
+                        cin >> cuantosCompra;
+                        if (productosT[prod_nombre].getCantidadP() >= cuantosCompra){
+                            productosT[prod_nombre].setCantidadP(productosT[prod_nombre].getCantidadP()-cuantosCompra);
+                            setIngresoDiarioT(productosT[prod_nombre].getPrecioP()*cuantosCompra);
+                        }
+                        else {
+                            cout << "No tenemos inventario suficiente \n";
+                        }
+                        existeProducto = true;
+                    }
+                }
+                if (existeProducto == false){
+                    cout << "No tenemos ese producto, intenta otra vez \n";
                 }
             }
             else if(categoria_compra == 4){
@@ -204,12 +246,48 @@ void Tienda::llenarCarrito() {
                         productosT[prod_cat].imprimirProducto();
                     }
                 }
+                cin >> eleccionCompra;
+                for (int prod_nombre = 0; prod_nombre < cantidadProductosT; prod_nombre++){
+                    if(productosT[prod_nombre].getNombreP() == eleccionCompra){
+                        cout << "Cuantos deseas comprar \n";
+                        cin >> cuantosCompra;
+                        if (productosT[prod_nombre].getCantidadP() >= cuantosCompra){
+                            productosT[prod_nombre].setCantidadP(productosT[prod_nombre].getCantidadP()-cuantosCompra);
+                            setIngresoDiarioT(productosT[prod_nombre].getPrecioP()*cuantosCompra);
+                        }
+                        else {
+                            cout << "No tenemos inventario suficiente \n";
+                        }
+                        existeProducto = true;
+                    }
+                }
+                if (existeProducto == false){
+                    cout << "No tenemos ese producto, intenta otra vez \n";
+                }
             }
             else if(categoria_compra == 5){
                 for (int prod_cat = 0; prod_cat < cantidadProductosT; prod_cat++){
                     if(productosT[prod_cat].getCategoriaP() == categoria_compra){
                         productosT[prod_cat].imprimirProducto();
                     }
+                }
+                cin >> eleccionCompra;
+                for (int prod_nombre = 0; prod_nombre < cantidadProductosT; prod_nombre++){
+                    if(productosT[prod_nombre].getNombreP() == eleccionCompra){
+                        cout << "Cuantos deseas comprar \n";
+                        cin >> cuantosCompra;
+                        if (productosT[prod_nombre].getCantidadP() >= cuantosCompra){
+                            productosT[prod_nombre].setCantidadP(productosT[prod_nombre].getCantidadP()-cuantosCompra);
+                            setIngresoDiarioT(productosT[prod_nombre].getPrecioP()*cuantosCompra);
+                        }
+                        else {
+                            cout << "No tenemos inventario suficiente \n";
+                        }
+                    }
+                    existeProducto = true;
+                }
+                if (existeProducto == false){
+                    cout << "No tenemos ese producto, intenta otra vez \n";
                 }
             }
             else {
