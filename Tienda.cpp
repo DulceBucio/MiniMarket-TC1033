@@ -83,8 +83,9 @@ void Tienda::agregarCliente() {
     cout << "Ingrese un numero telefonico: \n";
     cin >> telefonoN;
     int i;
-    i = sizeof(clientesT[CANTCLIENTES]);
+    i = getCantidadClientesT();
     clientesT[i].setCliente(nombreN, identificadorN, correoN, telefonoN);
+    setCantidadClientesT(i+1);
 }
 
 //Metodo para agregar los productos desde un archivo seleccionado
@@ -95,7 +96,7 @@ void Tienda::agregarLosProducto(string nombreArchivo) {
     if (!miArchivo) // si el archivo no se encuentra, marcara error
         cout<<"\nEl archivo no existe\n";
     else{
-        cout<<"\nLleno el arreglo con los datos del archivo de texto\n";
+        cout<<"Se cargaron los productos correctamente \n";
         string clave, nombre;
         int categoria, cantidad, i = 0;
         float precio;
@@ -103,8 +104,8 @@ void Tienda::agregarLosProducto(string nombreArchivo) {
             // y no rebasar el tamanio de mi arreglo
             miArchivo >> clave >> nombre >> categoria >> precio >> cantidad; // obtengo los valores del archivo y
             // los paso a mis variables previamente definidas con el tipo requerido
-            cout << nombre << " " << categoria << " " << precio << " " << cantidad << endl;
             productosT[i++].setProducto(clave, nombre, categoria, precio, cantidad);
+            setCantidadProductosT(i);
         }
     }
 }
@@ -127,7 +128,7 @@ void Tienda::agregarElProducto() {
         cin >> cantidadN_P;
         productosT[i].setProducto(claveN_P, nombreN_P, categoriaN_P, precioN_P, cantidadN_P);
         setCantidadProductosT(i);
-        cout << "¿Desea agregar otro producto? 1 para si, 2 para no \n";
+        cout << "Desea agregar otro producto? 1 para si, 2 para no \n";
         cin >> masproductos;
         if (masproductos == 1)
             i =+1;
@@ -142,16 +143,45 @@ void Tienda::llenarCarrito() {
     bool existe_usuario = false;
     cout << "Ingrese su usuario de cliente: \n";
     cin >> usuario_compra;
-    for (int verif_usuario = 0; verif_usuario < CANTCLIENTES; verif_usuario++) {
-        if (clientesT[verif_usuario].getIdentificadorC() == usuario_compra){
+    for (int verif_usuario = 0; verif_usuario < getCantidadClientesT(); verif_usuario++) { //Ciclo para verificar si ya existe el usuario en la lista
+        if (clientesT[verif_usuario].getIdentificadorC() == usuario_compra) {
             existe_usuario = true;
         }
-        else {
-            cout << "Eres nuevo aqui \n";
-            agregarCliente();
-        }
+    }
+    int categoria_compra;
+    if (existe_usuario){
+        do {
+            cout << "Que desea comprar? \n";
+            cout << "1) Frutas y verduras \n";
+            cout << "2) Electrodomesticos \n";
+            cout << "3) Abarrotes \n";
+            cout << "4) Higiene personal \n";
+            cout << "5) Jardineria \n";
+            cout << "6) Regresar al menu principal \n";
+            cin >> categoria_compra;
+            if (categoria_compra == 1) {
+                cout << "a";
+            }
+            else if(categoria_compra == 2){
+                cout << "b";
+            }
+            else if(categoria_compra == 3){
+                cout << "c";
+            }
+            else if(categoria_compra == 4){
+                cout << "d";
+            }
+            else if(categoria_compra == 5){
+                cout << "e";
+            }
+        } while (categoria_compra != 6);
+    }
+    else {
+        cout << "La venta de productos es solo para usuarios registrados \n";
+        cout << "Te invitamos a ser parte de nuestra tienda registrandote \n";
     }
 }
+
 
 // Método para imprimir con carteles los diferentes atributos:
 void Tienda::imprimirTienda() {
