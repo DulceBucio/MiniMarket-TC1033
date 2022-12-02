@@ -83,5 +83,3 @@ void Producto::imprimirProducto() {
 void Producto::imprimirMenuProductos() {
     cout << nombreP << " " << precioP << "   " << cantidadP << "\n";
 }
-
-
