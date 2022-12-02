@@ -12,7 +12,9 @@
 using namespace std;
 
 int main() {
+    // Creamos un objeto tienda, es el que modificara el usuario
     Tienda tiendita;
+    // Declaramos los atributos que personalizara el usuario y los asignamos
     string identificadorT_usuario, nombreT_usuario, direccionT_usuario;
     cout << "Introduzca un identificador para su tienda: \n";
     cin >> identificadorT_usuario;
@@ -23,11 +25,12 @@ int main() {
     string archivo_usuario;
     cout << "Elija un archivo de donde importar los productos \n";
     cin >> archivo_usuario;
+    // Usamos los metodos necesarios para agregar los datos seleccionados por el usuario
     tiendita.agregarLosProducto(archivo_usuario);
     tiendita.setIdentificadorT(identificadorT_usuario);
     tiendita.setNombreT(nombreT_usuario);
     tiendita.setDireccionT(direccionT_usuario);
-    int menu;
+    int menu; //Esta variable controla el menu que se muestra
     do {
         cout << "Bienvenido a tiendita " << tiendita.getNombreT() << "\n";
         cout << "Elija una opcion: \n";

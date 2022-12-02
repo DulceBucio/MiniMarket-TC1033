@@ -50,7 +50,7 @@ public:
     void agregarElProducto();
     void agregarCliente();
     void llenarCarrito();
-    void agregarProductoCarrito(string, int);
+    //void agregarProductoCarrito(string, int);
     //void imprimirTicketCompra();
     void cerrarOperaciones();
 };
