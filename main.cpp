@@ -6,6 +6,7 @@
 //
 
 #include <iostream>
+#include <fstream>
 #include "Producto.h" //Incluimos las clases necesarias que creamos
 #include "Cliente.h"
 #include "Tienda.h"
@@ -25,6 +26,11 @@ int main() {
     string archivo_usuario;
     cout << "Elija un archivo de donde importar los productos \n";
     cin >> archivo_usuario;
+    bool hayArchivo = false;
+    ifstream miArchivo;
+    miArchivo.open(archivo_usuario.c_str(), ios::out | ios::in);
+    if (miArchivo)
+        hayArchivo = true;
     // Usamos los metodos necesarios para agregar los datos seleccionados por el usuario
     tiendita.agregarLosProducto(archivo_usuario);
     tiendita.setIdentificadorT(identificadorT_usuario);
@@ -42,7 +48,15 @@ int main() {
         cout << "6) Salir \n";
         cin >> menu;
         if (menu == "1"){
-            cout << "No tienes permiso para realizar esta operacion \n";
+            if (hayArchivo) {
+                cout << "No tienes permiso para realizar esta operacion \n";
+            }
+            else {
+                cout << "Elija un archivo de donde importar los productos \n";
+                cin >> archivo_usuario;
+                tiendita.agregarLosProducto(archivo_usuario);
+                hayArchivo = true;
+            }
         }
         else if(menu == "2") {
             tiendita.agregarElProducto();

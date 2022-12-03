@@ -96,6 +96,7 @@ void Tienda::agregarCliente() {
     cout << "Ahora usted es parte de nuestro catalogo! \n";
 }
 
+
 //Método para agregar los productos desde un archivo seleccionado
 void Tienda::agregarLosProducto(string nombreArchivo) {
     ifstream miArchivo;
