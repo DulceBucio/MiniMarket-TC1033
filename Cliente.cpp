@@ -29,7 +29,8 @@ Cliente::Cliente(string identificadorC, string nombreC, string correoElectronico
     this -> cantidadProdCarrito = cantidadProdCarrito;
 }
 
-Cliente::~Cliente() {}
+Cliente::~Cliente() {} // Destructor
+
 // Return para obtener el valor de los diferentes atributos:
 string Cliente::getIdentificadorC() {
     return identificadorC;

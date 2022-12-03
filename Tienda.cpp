@@ -31,7 +31,7 @@ Tienda::Tienda(string identificadorT, string nombreT, string direccionT, int can
     this -> ingresoDiarioT = ingresoDiarioT;
 }
 
-Tienda::~Tienda() {}
+Tienda::~Tienda() {} // Destructor
 
 // Return para obtener el valor de los diferentes atributos:
 string Tienda::getIdentificadorT() {
@@ -72,7 +72,7 @@ void Tienda::setCantidadClientesT(int cantidadClientesT1) {
 void Tienda::setIngresoDiarioT(double ingresoDiarioT1) {
         ingresoDiarioT = ingresoDiarioT1;
 }
-// Metodo para agregar clientes usando el setClientes
+// Método para agregar clientes usando el setClientes
 void Tienda::agregarCliente() {
     string nombreN, identificadorN, correoN, telefonoN;
     cout << "Ingrese su nombre: \n";
@@ -90,7 +90,7 @@ void Tienda::agregarCliente() {
     cout << "Ahora usted es parte de nuestro catalogo! \n";
 }
 
-//Metodo para agregar los productos desde un archivo seleccionado
+//Método para agregar los productos desde un archivo seleccionado
 void Tienda::agregarLosProducto(string nombreArchivo) {
     ifstream miArchivo;
     miArchivo.open(nombreArchivo.c_str(), ios::out | ios::in);
@@ -114,7 +114,7 @@ void Tienda::agregarLosProducto(string nombreArchivo) {
     }
 }
 
-// Metodo para agregar productos manualmente a la respectiva lista
+// Método para agregar productos manualmente a la respectiva lista
 void Tienda::agregarElProducto() {
     string claveN_P, nombreN_P;
     int categoriaN_P, cantidadN_P, i = 0, masproductos = 1;
@@ -132,7 +132,7 @@ void Tienda::agregarElProducto() {
         cin >> cantidadN_P;
         productosT[i].setProducto(claveN_P, nombreN_P, categoriaN_P, precioN_P, cantidadN_P);
         setCantidadProductosT(i);
-        cout << "Desea agregar otro producto? 1 para si, 2 para no \n";
+        cout << "¿Desea agregar otro producto? 1 para si, 2 para no \n";
         cin >> masproductos;
         if (masproductos == 1)
             i =+1;
@@ -193,7 +193,7 @@ void Tienda::llenarCarrito() {
     }
     if (existe_usuario){
         do {
-            cout << "Que desea comprar? \n";
+            cout << "¿Que desea comprar? \n";
             cout << "1) Frutas y verduras \n";
             cout << "2) Electrodomesticos \n";
             cout << "3) Abarrotes \n";
@@ -208,57 +208,13 @@ void Tienda::llenarCarrito() {
                 desplegarMenuCompra(2);
             }
             else if(categoria_compra == 3){
-                for (int prod_cat = 0; prod_cat < cantidadProductosT; prod_cat++){
-                    if(productosT[prod_cat].getCategoriaP() == categoria_compra){
-                        productosT[prod_cat].imprimirProducto();
-                    }
-                }
-                cin >> eleccionCompra;
-                for (int prod_nombre = 0; prod_nombre < cantidadProductosT; prod_nombre++){
-                    if(productosT[prod_nombre].getNombreP() == eleccionCompra){
-                        cout << "Cuantos deseas comprar \n";
-                        cin >> cuantosCompra;
-                        if (productosT[prod_nombre].getCantidadP() >= cuantosCompra){
-                            productosT[prod_nombre].setCantidadP(productosT[prod_nombre].getCantidadP()-cuantosCompra);
-                            setIngresoDiarioT(productosT[prod_nombre].getPrecioP()*cuantosCompra);
-                        }
-                        else {
-                            cout << "No tenemos inventario suficiente \n";
-                        }
-                        existeProducto = true;
-                    }
-                }
-                if (existeProducto == false){
-                    cout << "No tenemos ese producto, intenta otra vez \n";
-                }
+                desplegarMenuCompra(3);
             }
             else if(categoria_compra == 4){
                 desplegarMenuCompra(4);
             }
             else if(categoria_compra == 5){
-                for (int prod_cat = 0; prod_cat < cantidadProductosT; prod_cat++){
-                    if(productosT[prod_cat].getCategoriaP() == categoria_compra){
-                        productosT[prod_cat].imprimirProducto();
-                    }
-                }
-                cin >> eleccionCompra;
-                for (int prod_nombre = 0; prod_nombre < cantidadProductosT; prod_nombre++){
-                    if(productosT[prod_nombre].getNombreP() == eleccionCompra){
-                        cout << "Cuantos deseas comprar \n";
-                        cin >> cuantosCompra;
-                        if (productosT[prod_nombre].getCantidadP() >= cuantosCompra){
-                            productosT[prod_nombre].setCantidadP(productosT[prod_nombre].getCantidadP()-cuantosCompra);
-                            setIngresoDiarioT(productosT[prod_nombre].getPrecioP()*cuantosCompra);
-                        }
-                        else {
-                            cout << "No tenemos inventario suficiente \n";
-                        }
-                    }
-                    existeProducto = true;
-                }
-                if (existeProducto == false){
-                    cout << "No tenemos ese producto, intenta otra vez \n";
-                }
+                desplegarMenuCompra(5);
             }
             else if (categoria_compra == 6) {
                 imprimirTicketCompra();
@@ -274,6 +230,7 @@ void Tienda::llenarCarrito() {
     }
 }
 
+// Método para
 void Tienda::cerrarOperaciones() {
     cout << "Total generado del dia: \n";
     cout << getIngresoDiarioT() << "\n";

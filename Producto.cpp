@@ -18,6 +18,8 @@ Producto::Producto() {
     precioP = 0.00;
     cantidadP = 0;
 }
+
+// Constructor con parámetros de la clase Producto:
 Producto::Producto(string claveT, string nombreP, int categoriaP, float precioP, int cantidadP) {
     this -> claveT = claveT;
     this -> nombreP = nombreP;
@@ -87,6 +89,7 @@ void Producto::imprimirProducto() {
     cout << "Cantidad de productos: " << cantidadP<< "\n";
 }
 
+// Método para imprimir un menú de selección del producto a comprar
 void Producto::imprimirMenuProductos() {
     cout << nombreP << " " << precioP << "   " << cantidadP << "\n";
 }
