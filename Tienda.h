@@ -15,7 +15,7 @@ const int CANTIDADPROD = 25;
 const int CANTCLIENTES = 20;
 class Tienda {
     string identificadorT, nombreT, direccionT;
-    int cantidadProductosT, cantidadClientesT;
+    int cantidadProductosT, cantidadClientesT, numeroDeCliente;
     Producto productosT[CANTIDADPROD];
     Cliente clientesT[CANTCLIENTES];
     double ingresoDiarioT;
@@ -32,6 +32,7 @@ public:
     string getDireccionT();
     int getCantidadProductosT();
     int getCantidadClientesT();
+    int getNumeroDeCliente();
     //Producto getProductosT();
     //Cliente getClientesT();
     double getIngresoDiarioT();
@@ -44,6 +45,7 @@ public:
     //Producto setProductosT();
     //Cliente setClientesT();
     void setIngresoDiarioT(double);
+    void setNumeroDeCliente(int);
     // Otros metodos
     void imprimirTienda();
     void agregarLosProducto(string);
@@ -51,7 +53,6 @@ public:
     void agregarCliente();
     void desplegarMenuCompra(int);
     void llenarCarrito();
-    //void agregarProductoCarrito(string, int);
     void imprimirTicketCompra();
     void cerrarOperaciones();
 };

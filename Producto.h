@@ -37,6 +37,7 @@ public:
     void setPrecioP(float);
     void setProductoCarrito(string, string, float, int);
     // Otros metodos
-    void imprimirProducto();
+    void imprimirProducto(); //Existen distintos metodos de impresion ya que dan distintos formatos
     void imprimirMenuProductos();
+    void imprimirTicketProductos();
 };

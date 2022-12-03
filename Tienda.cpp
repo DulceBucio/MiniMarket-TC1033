@@ -52,7 +52,9 @@ int Tienda::getCantidadClientesT() {
 double Tienda::getIngresoDiarioT() {
     return ingresoDiarioT;
 }
-
+int Tienda::getNumeroDeCliente() {
+    return numeroDeCliente;
+}
 // Métodos para definir el valor de los diferentes atributos:
 void Tienda::setIdentificadorT(string identificadorT1) {
         identificadorT = identificadorT1;
@@ -72,6 +74,9 @@ void Tienda::setCantidadClientesT(int cantidadClientesT1) {
 void Tienda::setIngresoDiarioT(double ingresoDiarioT1) {
         ingresoDiarioT = ingresoDiarioT1;
 }
+void Tienda::setNumeroDeCliente(int numeroDC) {
+    numeroDeCliente = numeroDC;
+}
 // Método para agregar clientes usando el setClientes
 void Tienda::agregarCliente() {
     string nombreN, identificadorN, correoN, telefonoN;
@@ -87,6 +92,7 @@ void Tienda::agregarCliente() {
     i = getCantidadClientesT();
     clientesT[i].setCliente(nombreN, identificadorN, correoN, telefonoN);
     setCantidadClientesT(i+1);
+    setNumeroDeCliente(getCantidadClientesT());
     cout << "Ahora usted es parte de nuestro catalogo! \n";
 }
 
@@ -142,9 +148,10 @@ void Tienda::agregarElProducto() {
 }
 
 void  Tienda::imprimirTicketCompra() {
-    cout << "Nombre" << " " << "Clave" << " " << "Precio" << " " << "Cantidad \n";
-    Producto prod_carrito = clientesT[cantidadClientesT].getCarritoC();
-    prod_carrito.imprimirProducto();
+    cout << "Clave" << " " << "Nombre" << " " << "Precio" << " " << "Cantidad \n";
+    Producto prod_carrito = clientesT[numeroDeCliente].getCarritoC();
+    prod_carrito.imprimirTicketProductos();
+    cout << "Total de compra: " << clientesT[numeroDeCliente].getTotalC() << "\n";
 }
 
 void Tienda::desplegarMenuCompra(int eleccion_categoria) {
@@ -165,10 +172,12 @@ void Tienda::desplegarMenuCompra(int eleccion_categoria) {
             existeProducto = true;
             if (productosT[prod_nombre].getCantidadP() >= cuantosCompra){
                 productosT[prod_nombre].setCantidadP(productosT[prod_nombre].getCantidadP()-cuantosCompra);
-                setIngresoDiarioT(productosT[prod_nombre].getPrecioP()*cuantosCompra);
+                setIngresoDiarioT(productosT[prod_nombre].getPrecioP()*cuantosCompra + getIngresoDiarioT());
                 string identificador_compra = productosT[prod_nombre].getClaveT();
                 float precio_compra = productosT[prod_nombre].getPrecioP();
-                clientesT[getCantidadClientesT()].setCarritoC(eleccionCompra, identificador_compra, precio_compra, cuantosCompra);
+                clientesT[numeroDeCliente].setCarritoC(eleccionCompra, identificador_compra, precio_compra, cuantosCompra);
+                clientesT[numeroDeCliente].setTotalC(productosT[prod_nombre].getPrecioP()*cuantosCompra + clientesT[getCantidadClientesT()].getTotalC());
+                clientesT[numeroDeCliente].setCantidadProdCarrito(getCantidadProductosT()+cuantosCompra);
             }
             else {
                 cout << "No tenemos inventario suficiente \n";
@@ -181,9 +190,8 @@ void Tienda::desplegarMenuCompra(int eleccion_categoria) {
 }
 // Método para comprar
 void Tienda::llenarCarrito() {
-    string usuario_compra;
+    string usuario_compra, categoria_compra;
     bool existe_usuario = false;
-    int categoria_compra;
     cout << "Ingrese su usuario de cliente: \n";
     cin >> usuario_compra;
     for (int verif_usuario = 0; verif_usuario < getCantidadClientesT(); verif_usuario++) { //Ciclo para verificar si ya existe el usuario en la lista
@@ -201,28 +209,28 @@ void Tienda::llenarCarrito() {
             cout << "5) Jardineria \n";
             cout << "6) Imprimir ticket \n";
             cin >> categoria_compra;
-            if (categoria_compra == 1) {
+            if (categoria_compra == "1") {
                 desplegarMenuCompra(1);
             }
-            else if(categoria_compra == 2){
+            else if(categoria_compra == "2"){
                 desplegarMenuCompra(2);
             }
-            else if(categoria_compra == 3){
+            else if(categoria_compra == "3"){
                 desplegarMenuCompra(3);
             }
-            else if(categoria_compra == 4){
+            else if(categoria_compra == "4"){
                 desplegarMenuCompra(4);
             }
-            else if(categoria_compra == 5){
+            else if(categoria_compra == "5"){
                 desplegarMenuCompra(5);
             }
-            else if (categoria_compra == 6) {
+            else if (categoria_compra == "6") {
                 imprimirTicketCompra();
             }
             else {
                 cout << "Categoria invalida! \n";
             }
-        } while (categoria_compra != 6);
+        } while (categoria_compra != "6");
     }
     else {
         cout << "La venta de productos es solo para usuarios registrados \n";

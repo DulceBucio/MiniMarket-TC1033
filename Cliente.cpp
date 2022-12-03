@@ -53,7 +53,7 @@ int Cliente::getCantidadProdCarrito() {
 }
 
 Producto Cliente::getCarritoC() {
-    for (int i = 0; i < CANT_CARRITO; i++){
+    for (int i = 0; i < cantidadProdCarrito; i++){
         return carritoC[i];
     }
 }
