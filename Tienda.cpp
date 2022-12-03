@@ -96,6 +96,10 @@ void Tienda::agregarCliente() {
     cout << "Ahora usted es parte de nuestro catalogo! \n";
 }
 
+bool Tienda::validarDatoEntero(string str){
+   for (int = 0; i < str.length(); i++){
+
+}
 
 //Método para agregar los productos desde un archivo seleccionado
 void Tienda::agregarLosProducto(string nombreArchivo) {
@@ -125,6 +129,7 @@ void Tienda::agregarLosProducto(string nombreArchivo) {
 void Tienda::agregarElProducto() {
     string claveN_P, nombreN_P;
     int categoriaN_P, cantidadN_P, i = 0, masproductos = 1;
+    bool existeClave = false;
     float precioN_P;
     while (i<CANTIDADPROD){
         cout << "Ingrese la clave del producto: \n";
@@ -138,8 +143,7 @@ void Tienda::agregarElProducto() {
         cout << "Ingrese la cantidad del producto: \n";
         cin >> cantidadN_P;
         productosT[i].setProducto(claveN_P, nombreN_P, categoriaN_P, precioN_P, cantidadN_P);
-        setCantidadProductosT(getCantidadProductosT()+i);
-        cout << "¿Desea agregar otro producto? 1 para si, 2 para no \n";
+        cout << "Desea agregar otro producto? 1 para si, 2 para no \n";
         cin >> masproductos;
         if (masproductos == 1)
             i =+1;
@@ -188,7 +192,7 @@ void Tienda::desplegarMenuCompra(int eleccion_categoria) {
             }
         }
     }
-    if (existeProducto == false){
+    if (!existeProducto){
         cout << "No tenemos ese producto, intenta de nuevo \n";
     }
 }
