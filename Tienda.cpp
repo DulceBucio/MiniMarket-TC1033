@@ -96,10 +96,6 @@ void Tienda::agregarCliente() {
     cout << "Ahora usted es parte de nuestro catalogo! \n";
 }
 
-bool Tienda::validarDatoEntero(string str){
-   for (int = 0; i < str.length(); i++){
-
-}
 
 //Método para agregar los productos desde un archivo seleccionado
 void Tienda::agregarLosProducto(string nombreArchivo) {

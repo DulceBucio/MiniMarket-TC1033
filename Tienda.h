@@ -48,7 +48,6 @@ public:
     void setNumeroDeCliente(int);
     // Otros metodos
     void imprimirTienda();
-    bool validarDatoEntero(string);
     void agregarLosProducto(string);
     void agregarElProducto();
     void agregarCliente();
