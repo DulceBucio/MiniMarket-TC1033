@@ -52,10 +52,13 @@ int Cliente::getCantidadProdCarrito() {
     return cantidadProdCarrito;
 }
 
-Producto Cliente::getCarritoC() {
-    for (int i = 0; i < cantidadProdCarrito; i++){
-        return carritoC[i];
-    }
+Producto Cliente::getCarritoC(int cual) {
+    Producto paraError;
+    paraError.setNombreP("Vacio");
+    if (cual >=0 && cual < CANT_CARRITO)
+        return carritoC[cual];
+    else
+        return paraError;
 }
 void Cliente::setTotalC(double totalC1) {
     totalC = totalC1;
@@ -88,7 +91,7 @@ void Cliente::setCliente(string identificadorC, string nombreC, string correoEle
 
 void Cliente::setCarritoC(string claveC, string nombreC, float precioC, int cantidadC) {
     carritoC[cantidadProdCarrito].setProductoCarrito(claveC, nombreC, precioC, cantidadC);
-    setCantidadProdCarrito(cantidadC);
+    setCantidadProdCarrito(getCantidadProdCarrito()+1);
 }
 
 // Método para imprimir con carteles los diferentes atributos:

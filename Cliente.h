@@ -29,7 +29,7 @@ public:
     string getTelefonoC();
     double getTotalC();
     int getCantidadProdCarrito();
-    Producto getCarritoC();
+    Producto getCarritoC(int);
     // Modificadores (setters)
     void setIdentificadorC(string);
     void setNombreC(string);

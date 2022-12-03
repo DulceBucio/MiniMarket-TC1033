@@ -95,5 +95,5 @@ void Producto::imprimirMenuProductos() {
 }
 
 void Producto::imprimirTicketProductos() {
-    cout << claveT << " " << nombreP << " " << precioP << " " << cantidadP << "\n";
+    cout << nombreP << "  " << claveT << "  " << precioP << "  " << cantidadP << "\n";
 }

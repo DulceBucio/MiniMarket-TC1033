@@ -90,7 +90,7 @@ void Tienda::agregarCliente() {
     cin >> telefonoN;
     int i;
     i = getCantidadClientesT();
-    clientesT[i].setCliente(nombreN, identificadorN, correoN, telefonoN);
+    clientesT[i].setCliente(identificadorN, nombreN, correoN, telefonoN);
     setCantidadClientesT(i+1);
     setNumeroDeCliente(getCantidadClientesT());
     cout << "Ahora usted es parte de nuestro catalogo! \n";
@@ -149,8 +149,10 @@ void Tienda::agregarElProducto() {
 
 void  Tienda::imprimirTicketCompra() {
     cout << "Clave" << " " << "Nombre" << " " << "Precio" << " " << "Cantidad \n";
-    Producto prod_carrito = clientesT[numeroDeCliente].getCarritoC();
-    prod_carrito.imprimirTicketProductos();
+    for (int i = 0; i < CANT_CARRITO; i++) {
+        Producto prod_carrito = clientesT[numeroDeCliente].getCarritoC(i);
+        prod_carrito.imprimirTicketProductos();
+    }
     cout << "Total de compra: " << clientesT[numeroDeCliente].getTotalC() << "\n";
 }
 
@@ -175,9 +177,8 @@ void Tienda::desplegarMenuCompra(int eleccion_categoria) {
                 setIngresoDiarioT(productosT[prod_nombre].getPrecioP()*cuantosCompra + getIngresoDiarioT());
                 string identificador_compra = productosT[prod_nombre].getClaveT();
                 float precio_compra = productosT[prod_nombre].getPrecioP();
-                clientesT[numeroDeCliente].setCarritoC(eleccionCompra, identificador_compra, precio_compra, cuantosCompra);
+                clientesT[numeroDeCliente].setCarritoC(identificador_compra, eleccionCompra, precio_compra, cuantosCompra);
                 clientesT[numeroDeCliente].setTotalC(productosT[prod_nombre].getPrecioP()*cuantosCompra + clientesT[getCantidadClientesT()].getTotalC());
-                clientesT[numeroDeCliente].setCantidadProdCarrito(clientesT[numeroDeCliente].getCantidadProdCarrito()+cuantosCompra);
             }
             else {
                 cout << "No tenemos inventario suficiente \n";
