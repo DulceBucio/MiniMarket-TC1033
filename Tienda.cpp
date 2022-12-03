@@ -177,7 +177,7 @@ void Tienda::desplegarMenuCompra(int eleccion_categoria) {
                 float precio_compra = productosT[prod_nombre].getPrecioP();
                 clientesT[numeroDeCliente].setCarritoC(eleccionCompra, identificador_compra, precio_compra, cuantosCompra);
                 clientesT[numeroDeCliente].setTotalC(productosT[prod_nombre].getPrecioP()*cuantosCompra + clientesT[getCantidadClientesT()].getTotalC());
-                clientesT[numeroDeCliente].setCantidadProdCarrito(getCantidadProductosT()+cuantosCompra);
+                clientesT[numeroDeCliente].setCantidadProdCarrito(clientesT[numeroDeCliente].getCantidadProdCarrito()+cuantosCompra);
             }
             else {
                 cout << "No tenemos inventario suficiente \n";
