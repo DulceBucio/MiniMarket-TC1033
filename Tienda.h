@@ -11,7 +11,7 @@
 using namespace std;
 
 // Declaración de la clase Cliente con sus atributos (privado) y sus métodos (público)
-const int CANTIDADPROD = 10;
+const int CANTIDADPROD = 25;
 const int CANTCLIENTES = 20;
 class Tienda {
     string identificadorT, nombreT, direccionT;

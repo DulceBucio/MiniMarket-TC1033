@@ -131,7 +131,7 @@ void Tienda::agregarElProducto() {
         cout << "Ingrese la cantidad del producto: \n";
         cin >> cantidadN_P;
         productosT[i].setProducto(claveN_P, nombreN_P, categoriaN_P, precioN_P, cantidadN_P);
-        setCantidadProductosT(i);
+        setCantidadProductosT(getCantidadProductosT()+i);
         cout << "¿Desea agregar otro producto? 1 para si, 2 para no \n";
         cin >> masproductos;
         if (masproductos == 1)
@@ -160,7 +160,7 @@ void Tienda::desplegarMenuCompra(int eleccion_categoria) {
     cin >> eleccionCompra;
     for (int prod_nombre = 0; prod_nombre < cantidadProductosT; prod_nombre++){
         if(productosT[prod_nombre].getNombreP() == eleccionCompra){
-            cout << "¿Cuantos deseas comprar? \n";
+            cout << "Cuantos deseas comprar? \n";
             cin >> cuantosCompra;
             existeProducto = true;
             if (productosT[prod_nombre].getCantidadP() >= cuantosCompra){
@@ -168,7 +168,7 @@ void Tienda::desplegarMenuCompra(int eleccion_categoria) {
                 setIngresoDiarioT(productosT[prod_nombre].getPrecioP()*cuantosCompra);
                 string identificador_compra = productosT[prod_nombre].getClaveT();
                 float precio_compra = productosT[prod_nombre].getPrecioP();
-                clientesT[prod_nombre].setCarritoC(eleccionCompra, identificador_compra, precio_compra, cuantosCompra);
+                clientesT[getCantidadClientesT()].setCarritoC(eleccionCompra, identificador_compra, precio_compra, cuantosCompra);
             }
             else {
                 cout << "No tenemos inventario suficiente \n";
@@ -193,7 +193,7 @@ void Tienda::llenarCarrito() {
     }
     if (existe_usuario){
         do {
-            cout << "¿Que desea comprar? \n";
+            cout << "Que desea comprar? \n";
             cout << "1) Frutas y verduras \n";
             cout << "2) Electrodomesticos \n";
             cout << "3) Abarrotes \n";
