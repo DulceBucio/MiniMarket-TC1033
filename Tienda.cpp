@@ -145,6 +145,11 @@ void Tienda::agregarElProducto() {
             i =+1;
         else
             i = CANTIDADPROD;
+        if (cin.fail()) {
+            cin.clear();
+            cin.ignore(256, '\n');
+            cout << "El dato debe ser un numero \n";
+        }
     }
 }
 
@@ -163,6 +168,7 @@ void Tienda::desplegarMenuCompra(int eleccion_categoria) {
     string eleccionCompra;
     int categoria_compra, cuantosCompra;
     bool existeProducto = false;
+    cout << "Introduce el nombre del articulo que deseas comprar: \n";
     cout << "Nombre " << "Precio " << "Cantidad \n";
     for (int prod_cat = 0; prod_cat < cantidadProductosT; prod_cat++){
         if(productosT[prod_cat].getCategoriaP() == eleccion_categoria){
@@ -174,6 +180,11 @@ void Tienda::desplegarMenuCompra(int eleccion_categoria) {
         if(productosT[prod_nombre].getNombreP() == eleccionCompra){
             cout << "Cuantos deseas comprar? \n";
             cin >> cuantosCompra;
+            if (cin.fail()) {
+                cin.clear();
+                cin.ignore(256, '\n');
+                cout << "El dato debe ser un numero \n";
+            }
             existeProducto = true;
             if (productosT[prod_nombre].getCantidadP() >= cuantosCompra){
                 productosT[prod_nombre].setCantidadP(productosT[prod_nombre].getCantidadP()-cuantosCompra);
@@ -196,7 +207,7 @@ void Tienda::desplegarMenuCompra(int eleccion_categoria) {
 void Tienda::llenarCarrito() {
     string usuario_compra, categoria_compra;
     bool existe_usuario = false;
-    cout << "Ingrese su usuario de cliente: \n";
+    cout << "Ingrese su identificador de cliente: \n";
     cin >> usuario_compra;
     for (int verif_usuario = 0; verif_usuario < getCantidadClientesT(); verif_usuario++) { //Ciclo para verificar si ya existe el usuario en la lista
         if (clientesT[verif_usuario].getIdentificadorC() == usuario_compra) {

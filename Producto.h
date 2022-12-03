@@ -15,7 +15,7 @@ class Producto {
     string claveT, nombreP;
     int categoriaP, cantidadP;
     float precioP;
-    //string frutas_verduras[CANT], electrodomesticos[CANT], abarrotes[CANT], higiene[CANT], jardineria[CANT];
+
 public:
     // Constructores
     Producto();
