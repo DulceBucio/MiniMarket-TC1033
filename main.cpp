@@ -30,7 +30,7 @@ int main() {
     tiendita.setIdentificadorT(identificadorT_usuario);
     tiendita.setNombreT(nombreT_usuario);
     tiendita.setDireccionT(direccionT_usuario);
-    int menu; //Esta variable controla el menu que se muestra
+    string menu; //Esta variable controla el menu que se muestra
     do {
         cout << "Bienvenido a tiendita " << tiendita.getNombreT() << "\n";
         cout << "Elija una opcion: \n";
@@ -41,25 +41,28 @@ int main() {
         cout << "5) Realizar cierre del dia \n";
         cout << "6) Salir \n";
         cin >> menu;
-        if (menu == 1){
+        if (menu == "1"){
             cout << "No tienes permiso para realizar esta operacion \n";
         }
-        else if(menu == 2) {
+        else if(menu == "2") {
             tiendita.agregarElProducto();
         }
-        else if(menu == 3){
+        else if(menu == "3"){
             tiendita.agregarCliente();
         }
-        else if(menu == 4) {
+        else if(menu == "4") {
             tiendita.llenarCarrito();
         }
-        else if(menu == 5) {
+        else if(menu == "5") {
             tiendita.cerrarOperaciones();
         }
-        else {
-            cout << "Opcion invalida! \n";
+        else if(menu == "6"){
+            cout << "Vuelva pronto! \n";
         }
-    } while (menu != 6);
+        else {
+            cout << "Opcion invalida \n";
+        }
+    } while (menu != "6");
 
 
     return 0;

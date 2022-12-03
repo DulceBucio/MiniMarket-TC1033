@@ -71,6 +71,13 @@ void Producto::setCantidadP(int cantidadP1) {
     cantidadP = cantidadP1;
 }
 
+void Producto::setProductoCarrito(string claveT, string nombreP, float precioP, int cantidadP){
+    this -> claveT = claveT;
+    this -> nombreP = nombreP;
+    this -> precioP = precioP;
+    this -> cantidadP = cantidadP;
+}
+
 // Método para imprimir con carteles los diferentes atributos:
 void Producto::imprimirProducto() {
     cout << "Clave del producto: " << claveT << "\n";

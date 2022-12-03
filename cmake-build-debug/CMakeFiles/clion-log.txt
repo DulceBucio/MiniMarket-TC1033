@@ -1,4 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S "C:\Users\yasmi\OneDrive\Documents\1er semestre\poo\proyecto_tc1033\ProyectoTC1033" -B "C:\Users\yasmi\OneDrive\Documents\1er semestre\poo\proyecto_tc1033\ProyectoTC1033\cmake-build-debug"
+"C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S "C:\Users\PC BULLOCK\Documents\1er semestre\proyecto integrador\ProyectoTC1033" -B "C:\Users\PC BULLOCK\Documents\1er semestre\proyecto integrador\ProyectoTC1033\cmake-build-debug"
 -- The C compiler identification is GNU 11.2.0
 -- The CXX compiler identification is GNU 11.2.0
 -- Detecting C compiler ABI info
@@ -13,4 +13,4 @@
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/yasmi/OneDrive/Documents/1er semestre/poo/proyecto_tc1033/ProyectoTC1033/cmake-build-debug
+-- Build files have been written to: C:/Users/PC BULLOCK/Documents/1er semestre/proyecto integrador/ProyectoTC1033/cmake-build-debug

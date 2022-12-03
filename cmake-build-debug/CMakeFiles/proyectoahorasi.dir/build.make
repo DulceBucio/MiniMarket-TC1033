@@ -52,10 +52,10 @@ RM = "C:\Program Files\JetBrains\CLion 2022.2.4\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\yasmi\OneDrive\Documents\1er semestre\poo\proyecto_tc1033\ProyectoTC1033"
+CMAKE_SOURCE_DIR = "C:\Users\PC BULLOCK\Documents\1er semestre\proyecto integrador\ProyectoTC1033"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\yasmi\OneDrive\Documents\1er semestre\poo\proyecto_tc1033\ProyectoTC1033\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\PC BULLOCK\Documents\1er semestre\proyecto integrador\ProyectoTC1033\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/proyectoahorasi.dir/depend.make
@@ -71,58 +71,58 @@ include CMakeFiles/proyectoahorasi.dir/flags.make
 CMakeFiles/proyectoahorasi.dir/main.cpp.obj: CMakeFiles/proyectoahorasi.dir/flags.make
 CMakeFiles/proyectoahorasi.dir/main.cpp.obj: ../main.cpp
 CMakeFiles/proyectoahorasi.dir/main.cpp.obj: CMakeFiles/proyectoahorasi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\yasmi\OneDrive\Documents\1er semestre\poo\proyecto_tc1033\ProyectoTC1033\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/proyectoahorasi.dir/main.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/proyectoahorasi.dir/main.cpp.obj -MF CMakeFiles\proyectoahorasi.dir\main.cpp.obj.d -o CMakeFiles\proyectoahorasi.dir\main.cpp.obj -c "C:\Users\yasmi\OneDrive\Documents\1er semestre\poo\proyecto_tc1033\ProyectoTC1033\main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\PC BULLOCK\Documents\1er semestre\proyecto integrador\ProyectoTC1033\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/proyectoahorasi.dir/main.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/proyectoahorasi.dir/main.cpp.obj -MF CMakeFiles\proyectoahorasi.dir\main.cpp.obj.d -o CMakeFiles\proyectoahorasi.dir\main.cpp.obj -c "C:\Users\PC BULLOCK\Documents\1er semestre\proyecto integrador\ProyectoTC1033\main.cpp"
 
 CMakeFiles/proyectoahorasi.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proyectoahorasi.dir/main.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\yasmi\OneDrive\Documents\1er semestre\poo\proyecto_tc1033\ProyectoTC1033\main.cpp" > CMakeFiles\proyectoahorasi.dir\main.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\PC BULLOCK\Documents\1er semestre\proyecto integrador\ProyectoTC1033\main.cpp" > CMakeFiles\proyectoahorasi.dir\main.cpp.i
 
 CMakeFiles/proyectoahorasi.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proyectoahorasi.dir/main.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\yasmi\OneDrive\Documents\1er semestre\poo\proyecto_tc1033\ProyectoTC1033\main.cpp" -o CMakeFiles\proyectoahorasi.dir\main.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\PC BULLOCK\Documents\1er semestre\proyecto integrador\ProyectoTC1033\main.cpp" -o CMakeFiles\proyectoahorasi.dir\main.cpp.s
 
 CMakeFiles/proyectoahorasi.dir/Producto.cpp.obj: CMakeFiles/proyectoahorasi.dir/flags.make
 CMakeFiles/proyectoahorasi.dir/Producto.cpp.obj: ../Producto.cpp
 CMakeFiles/proyectoahorasi.dir/Producto.cpp.obj: CMakeFiles/proyectoahorasi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\yasmi\OneDrive\Documents\1er semestre\poo\proyecto_tc1033\ProyectoTC1033\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/proyectoahorasi.dir/Producto.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/proyectoahorasi.dir/Producto.cpp.obj -MF CMakeFiles\proyectoahorasi.dir\Producto.cpp.obj.d -o CMakeFiles\proyectoahorasi.dir\Producto.cpp.obj -c "C:\Users\yasmi\OneDrive\Documents\1er semestre\poo\proyecto_tc1033\ProyectoTC1033\Producto.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\PC BULLOCK\Documents\1er semestre\proyecto integrador\ProyectoTC1033\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/proyectoahorasi.dir/Producto.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/proyectoahorasi.dir/Producto.cpp.obj -MF CMakeFiles\proyectoahorasi.dir\Producto.cpp.obj.d -o CMakeFiles\proyectoahorasi.dir\Producto.cpp.obj -c "C:\Users\PC BULLOCK\Documents\1er semestre\proyecto integrador\ProyectoTC1033\Producto.cpp"
 
 CMakeFiles/proyectoahorasi.dir/Producto.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proyectoahorasi.dir/Producto.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\yasmi\OneDrive\Documents\1er semestre\poo\proyecto_tc1033\ProyectoTC1033\Producto.cpp" > CMakeFiles\proyectoahorasi.dir\Producto.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\PC BULLOCK\Documents\1er semestre\proyecto integrador\ProyectoTC1033\Producto.cpp" > CMakeFiles\proyectoahorasi.dir\Producto.cpp.i
 
 CMakeFiles/proyectoahorasi.dir/Producto.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proyectoahorasi.dir/Producto.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\yasmi\OneDrive\Documents\1er semestre\poo\proyecto_tc1033\ProyectoTC1033\Producto.cpp" -o CMakeFiles\proyectoahorasi.dir\Producto.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\PC BULLOCK\Documents\1er semestre\proyecto integrador\ProyectoTC1033\Producto.cpp" -o CMakeFiles\proyectoahorasi.dir\Producto.cpp.s
 
 CMakeFiles/proyectoahorasi.dir/Cliente.cpp.obj: CMakeFiles/proyectoahorasi.dir/flags.make
 CMakeFiles/proyectoahorasi.dir/Cliente.cpp.obj: ../Cliente.cpp
 CMakeFiles/proyectoahorasi.dir/Cliente.cpp.obj: CMakeFiles/proyectoahorasi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\yasmi\OneDrive\Documents\1er semestre\poo\proyecto_tc1033\ProyectoTC1033\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/proyectoahorasi.dir/Cliente.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/proyectoahorasi.dir/Cliente.cpp.obj -MF CMakeFiles\proyectoahorasi.dir\Cliente.cpp.obj.d -o CMakeFiles\proyectoahorasi.dir\Cliente.cpp.obj -c "C:\Users\yasmi\OneDrive\Documents\1er semestre\poo\proyecto_tc1033\ProyectoTC1033\Cliente.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\PC BULLOCK\Documents\1er semestre\proyecto integrador\ProyectoTC1033\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/proyectoahorasi.dir/Cliente.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/proyectoahorasi.dir/Cliente.cpp.obj -MF CMakeFiles\proyectoahorasi.dir\Cliente.cpp.obj.d -o CMakeFiles\proyectoahorasi.dir\Cliente.cpp.obj -c "C:\Users\PC BULLOCK\Documents\1er semestre\proyecto integrador\ProyectoTC1033\Cliente.cpp"
 
 CMakeFiles/proyectoahorasi.dir/Cliente.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proyectoahorasi.dir/Cliente.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\yasmi\OneDrive\Documents\1er semestre\poo\proyecto_tc1033\ProyectoTC1033\Cliente.cpp" > CMakeFiles\proyectoahorasi.dir\Cliente.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\PC BULLOCK\Documents\1er semestre\proyecto integrador\ProyectoTC1033\Cliente.cpp" > CMakeFiles\proyectoahorasi.dir\Cliente.cpp.i
 
 CMakeFiles/proyectoahorasi.dir/Cliente.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proyectoahorasi.dir/Cliente.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\yasmi\OneDrive\Documents\1er semestre\poo\proyecto_tc1033\ProyectoTC1033\Cliente.cpp" -o CMakeFiles\proyectoahorasi.dir\Cliente.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\PC BULLOCK\Documents\1er semestre\proyecto integrador\ProyectoTC1033\Cliente.cpp" -o CMakeFiles\proyectoahorasi.dir\Cliente.cpp.s
 
 CMakeFiles/proyectoahorasi.dir/Tienda.cpp.obj: CMakeFiles/proyectoahorasi.dir/flags.make
 CMakeFiles/proyectoahorasi.dir/Tienda.cpp.obj: ../Tienda.cpp
 CMakeFiles/proyectoahorasi.dir/Tienda.cpp.obj: CMakeFiles/proyectoahorasi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\yasmi\OneDrive\Documents\1er semestre\poo\proyecto_tc1033\ProyectoTC1033\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/proyectoahorasi.dir/Tienda.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/proyectoahorasi.dir/Tienda.cpp.obj -MF CMakeFiles\proyectoahorasi.dir\Tienda.cpp.obj.d -o CMakeFiles\proyectoahorasi.dir\Tienda.cpp.obj -c "C:\Users\yasmi\OneDrive\Documents\1er semestre\poo\proyecto_tc1033\ProyectoTC1033\Tienda.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\PC BULLOCK\Documents\1er semestre\proyecto integrador\ProyectoTC1033\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/proyectoahorasi.dir/Tienda.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/proyectoahorasi.dir/Tienda.cpp.obj -MF CMakeFiles\proyectoahorasi.dir\Tienda.cpp.obj.d -o CMakeFiles\proyectoahorasi.dir\Tienda.cpp.obj -c "C:\Users\PC BULLOCK\Documents\1er semestre\proyecto integrador\ProyectoTC1033\Tienda.cpp"
 
 CMakeFiles/proyectoahorasi.dir/Tienda.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/proyectoahorasi.dir/Tienda.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\yasmi\OneDrive\Documents\1er semestre\poo\proyecto_tc1033\ProyectoTC1033\Tienda.cpp" > CMakeFiles\proyectoahorasi.dir\Tienda.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\PC BULLOCK\Documents\1er semestre\proyecto integrador\ProyectoTC1033\Tienda.cpp" > CMakeFiles\proyectoahorasi.dir\Tienda.cpp.i
 
 CMakeFiles/proyectoahorasi.dir/Tienda.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/proyectoahorasi.dir/Tienda.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\yasmi\OneDrive\Documents\1er semestre\poo\proyecto_tc1033\ProyectoTC1033\Tienda.cpp" -o CMakeFiles\proyectoahorasi.dir\Tienda.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\PC BULLOCK\Documents\1er semestre\proyecto integrador\ProyectoTC1033\Tienda.cpp" -o CMakeFiles\proyectoahorasi.dir\Tienda.cpp.s
 
 # Object files for target proyectoahorasi
 proyectoahorasi_OBJECTS = \
@@ -142,7 +142,7 @@ proyectoahorasi.exe: CMakeFiles/proyectoahorasi.dir/build.make
 proyectoahorasi.exe: CMakeFiles/proyectoahorasi.dir/linklibs.rsp
 proyectoahorasi.exe: CMakeFiles/proyectoahorasi.dir/objects1.rsp
 proyectoahorasi.exe: CMakeFiles/proyectoahorasi.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\yasmi\OneDrive\Documents\1er semestre\poo\proyecto_tc1033\ProyectoTC1033\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable proyectoahorasi.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\PC BULLOCK\Documents\1er semestre\proyecto integrador\ProyectoTC1033\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable proyectoahorasi.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\proyectoahorasi.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -154,6 +154,6 @@ CMakeFiles/proyectoahorasi.dir/clean:
 .PHONY : CMakeFiles/proyectoahorasi.dir/clean
 
 CMakeFiles/proyectoahorasi.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\yasmi\OneDrive\Documents\1er semestre\poo\proyecto_tc1033\ProyectoTC1033" "C:\Users\yasmi\OneDrive\Documents\1er semestre\poo\proyecto_tc1033\ProyectoTC1033" "C:\Users\yasmi\OneDrive\Documents\1er semestre\poo\proyecto_tc1033\ProyectoTC1033\cmake-build-debug" "C:\Users\yasmi\OneDrive\Documents\1er semestre\poo\proyecto_tc1033\ProyectoTC1033\cmake-build-debug" "C:\Users\yasmi\OneDrive\Documents\1er semestre\poo\proyecto_tc1033\ProyectoTC1033\cmake-build-debug\CMakeFiles\proyectoahorasi.dir\DependInfo.cmake" --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\PC BULLOCK\Documents\1er semestre\proyecto integrador\ProyectoTC1033" "C:\Users\PC BULLOCK\Documents\1er semestre\proyecto integrador\ProyectoTC1033" "C:\Users\PC BULLOCK\Documents\1er semestre\proyecto integrador\ProyectoTC1033\cmake-build-debug" "C:\Users\PC BULLOCK\Documents\1er semestre\proyecto integrador\ProyectoTC1033\cmake-build-debug" "C:\Users\PC BULLOCK\Documents\1er semestre\proyecto integrador\ProyectoTC1033\cmake-build-debug\CMakeFiles\proyectoahorasi.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/proyectoahorasi.dir/depend
 

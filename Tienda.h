@@ -49,8 +49,9 @@ public:
     void agregarLosProducto(string);
     void agregarElProducto();
     void agregarCliente();
+    void desplegarMenuCompra(int);
     void llenarCarrito();
     //void agregarProductoCarrito(string, int);
-    //void imprimirTicketCompra();
+    void imprimirTicketCompra();
     void cerrarOperaciones();
 };

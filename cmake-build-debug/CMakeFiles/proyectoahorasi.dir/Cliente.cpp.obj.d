@@ -1,6 +1,6 @@
 CMakeFiles/proyectoahorasi.dir/Cliente.cpp.obj: \
- C:\Users\yasmi\OneDrive\Documents\1er\ semestre\poo\proyecto_tc1033\ProyectoTC1033\Cliente.cpp \
- C:\Users\yasmi\OneDrive\Documents\1er\ semestre\poo\proyecto_tc1033\ProyectoTC1033\Cliente.h \
+ C:\Users\PC\ BULLOCK\Documents\1er\ semestre\proyecto\ integrador\ProyectoTC1033\Cliente.cpp \
+ C:\Users\PC\ BULLOCK\Documents\1er\ semestre\proyecto\ integrador\ProyectoTC1033\Cliente.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
  C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
@@ -133,4 +133,4 @@ CMakeFiles/proyectoahorasi.dir/Cliente.cpp.obj: \
  C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream.tcc \
  C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/istream \
  C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc \
- C:\Users\yasmi\OneDrive\Documents\1er\ semestre\poo\proyecto_tc1033\ProyectoTC1033\Producto.h
+ C:\Users\PC\ BULLOCK\Documents\1er\ semestre\proyecto\ integrador\ProyectoTC1033\Producto.h

@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/yasmi/OneDrive/Documents/1er semestre/poo/proyecto_tc1033/ProyectoTC1033/Cliente.cpp" "CMakeFiles/proyectoahorasi.dir/Cliente.cpp.obj" "gcc" "CMakeFiles/proyectoahorasi.dir/Cliente.cpp.obj.d"
-  "C:/Users/yasmi/OneDrive/Documents/1er semestre/poo/proyecto_tc1033/ProyectoTC1033/Producto.cpp" "CMakeFiles/proyectoahorasi.dir/Producto.cpp.obj" "gcc" "CMakeFiles/proyectoahorasi.dir/Producto.cpp.obj.d"
-  "C:/Users/yasmi/OneDrive/Documents/1er semestre/poo/proyecto_tc1033/ProyectoTC1033/Tienda.cpp" "CMakeFiles/proyectoahorasi.dir/Tienda.cpp.obj" "gcc" "CMakeFiles/proyectoahorasi.dir/Tienda.cpp.obj.d"
-  "C:/Users/yasmi/OneDrive/Documents/1er semestre/poo/proyecto_tc1033/ProyectoTC1033/main.cpp" "CMakeFiles/proyectoahorasi.dir/main.cpp.obj" "gcc" "CMakeFiles/proyectoahorasi.dir/main.cpp.obj.d"
+  "C:/Users/PC BULLOCK/Documents/1er semestre/proyecto integrador/ProyectoTC1033/Cliente.cpp" "CMakeFiles/proyectoahorasi.dir/Cliente.cpp.obj" "gcc" "CMakeFiles/proyectoahorasi.dir/Cliente.cpp.obj.d"
+  "C:/Users/PC BULLOCK/Documents/1er semestre/proyecto integrador/ProyectoTC1033/Producto.cpp" "CMakeFiles/proyectoahorasi.dir/Producto.cpp.obj" "gcc" "CMakeFiles/proyectoahorasi.dir/Producto.cpp.obj.d"
+  "C:/Users/PC BULLOCK/Documents/1er semestre/proyecto integrador/ProyectoTC1033/Tienda.cpp" "CMakeFiles/proyectoahorasi.dir/Tienda.cpp.obj" "gcc" "CMakeFiles/proyectoahorasi.dir/Tienda.cpp.obj.d"
+  "C:/Users/PC BULLOCK/Documents/1er semestre/proyecto integrador/ProyectoTC1033/main.cpp" "CMakeFiles/proyectoahorasi.dir/main.cpp.obj" "gcc" "CMakeFiles/proyectoahorasi.dir/main.cpp.obj.d"
   )
 
 # Targets to which this target links.

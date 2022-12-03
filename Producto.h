@@ -35,6 +35,7 @@ public:
     void setCategoriaP(int);
     void setCantidadP(int);
     void setPrecioP(float);
+    void setProductoCarrito(string, string, float, int);
     // Otros metodos
     void imprimirProducto();
     void imprimirMenuProductos();

@@ -1,3 +1,3 @@
-C:/Users/yasmi/OneDrive/Documents/1er semestre/poo/proyecto_tc1033/ProyectoTC1033/cmake-build-debug/CMakeFiles/proyectoahorasi.dir
-C:/Users/yasmi/OneDrive/Documents/1er semestre/poo/proyecto_tc1033/ProyectoTC1033/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/yasmi/OneDrive/Documents/1er semestre/poo/proyecto_tc1033/ProyectoTC1033/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/PC BULLOCK/Documents/1er semestre/proyecto integrador/ProyectoTC1033/cmake-build-debug/CMakeFiles/proyectoahorasi.dir
+C:/Users/PC BULLOCK/Documents/1er semestre/proyecto integrador/ProyectoTC1033/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/PC BULLOCK/Documents/1er semestre/proyecto integrador/ProyectoTC1033/cmake-build-debug/CMakeFiles/rebuild_cache.dir

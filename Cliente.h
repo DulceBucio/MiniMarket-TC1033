@@ -15,10 +15,11 @@ class Cliente {
     string identificadorC, nombreC, correoElectronicoC, telefonoC;
     Producto carritoC[CANT_CARRITO];
     double totalC;
+    int cantidadProdCarrito;
 public:
     // Constructores
     Cliente();
-    Cliente(string, string, string, string, double);
+    Cliente(string, string, string, string, double, int);
     // Destructor
     ~Cliente();
     // Accesores (getters)
@@ -27,15 +28,17 @@ public:
     string getCorreoElectronicoC();
     string getTelefonoC();
     double getTotalC();
-    Producto getCarritoC(int);
+    int getCantidadProdCarrito();
+    Producto getCarritoC();
     // Modificadores (setters)
     void setIdentificadorC(string);
     void setNombreC(string);
     void setCorreoElectronicoC(string);
     void setTelefonoC(string);
     void setTotalC(double);
+    void setCantidadProdCarrito(int);
     void setCliente(string, string, string, string);
-    //Producto setCarritoC();
+    void setCarritoC(string, string, float, int);
     // Otros metodos
     void imprimirCliente();
 };
