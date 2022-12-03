@@ -82,7 +82,7 @@ void Tienda::agregarCliente() {
     string nombreN, identificadorN, correoN, telefonoN;
     cout << "Ingrese su nombre: \n";
     cin >> nombreN;
-    cout << "Ingrese un identificador: \n ";
+    cout << "Ingrese un identificador: \n";
     cin >> identificadorN;
     cout << "Ingrese un correo electronico: \n";
     cin >> correoN;
@@ -154,6 +154,8 @@ void  Tienda::imprimirTicketCompra() {
         prod_carrito.imprimirTicketProductos();
     }
     cout << "Total de compra: " << clientesT[numeroDeCliente].getTotalC() << "\n";
+    clientesT[numeroDeCliente].vaciarCarritoC();
+    clientesT[numeroDeCliente].setTotalC(00);
 }
 
 void Tienda::desplegarMenuCompra(int eleccion_categoria) {

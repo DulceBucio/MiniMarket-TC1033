@@ -39,6 +39,7 @@ public:
     void setCantidadProdCarrito(int);
     void setCliente(string, string, string, string);
     void setCarritoC(string, string, float, int);
+    void vaciarCarritoC();
     // Otros metodos
     void imprimirCliente();
 };

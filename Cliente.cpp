@@ -94,6 +94,13 @@ void Cliente::setCarritoC(string claveC, string nombreC, float precioC, int cant
     setCantidadProdCarrito(getCantidadProdCarrito()+1);
 }
 
+void Cliente::vaciarCarritoC() {
+    int i = 0;
+    while (i < CANT_CARRITO) {
+            carritoC[i].setProductoCarrito("0", "0", 0, 0);
+            i += 1;
+    }
+}
 // Método para imprimir con carteles los diferentes atributos:
 void Cliente::imprimirCliente() {
     cout << "Identificador del cliente: " << identificadorC << "\n";
